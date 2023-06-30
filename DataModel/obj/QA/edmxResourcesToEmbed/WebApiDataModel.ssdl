@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PCM_LearningBuddyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tbl_AccessToken">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AuthToken" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IssuedOn" Type="datetime" />
+    <Property Name="ExpiresOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_Board">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Category_SubTopic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="StateId" Type="uniqueidentifier" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Image_Content">
+    <Key>
+      <PropertyRef Name="ImageID" />
+    </Key>
+    <Property Name="ImageID" Type="varbinary" MaxLength="50" Nullable="false" />
+    <Property Name="ImageName" Type="varbinary" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_Level">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="Range" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="tbl_Location">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CityId" Type="uniqueidentifier" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Map_Role_Permission">
+    <Key>
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="PermissionId" />
+    </Key>
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PermissionId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="tbl_Map_Role_User">
+    <Key>
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="tbl_Permission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="tbl_Question_Pattern">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="15" />
+    <Property Name="Pattern" Type="nvarchar(max)" />
+    <Property Name="TopicId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Sub_TopicId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Category_SubTopicId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LevelId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="BoardId" Type="uniqueidentifier" />
+    <Property Name="SubjectId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="StandardId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="tbl_Standard">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="TypeName" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="tbl_Standard_Level_Board_Mapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LevelId" Type="uniqueidentifier" />
+    <Property Name="StandardId" Type="uniqueidentifier" />
+    <Property Name="BoardId" Type="uniqueidentifier" />
+    <Property Name="TopicId" Type="uniqueidentifier" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_State">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CountryId" Type="uniqueidentifier" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Subject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="Code" Type="nvarchar" MaxLength="150" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_SubTopic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="10" />
+    <Property Name="TopicId" Type="uniqueidentifier" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="UPdatedOn" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_Topic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="250" />
+    <Property Name="SubjectId" Type="uniqueidentifier" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="tbl_User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MiddleName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Address1" Type="varchar" MaxLength="250" />
+    <Property Name="Mobile" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="LoginId" Type="varchar" MaxLength="50" />
+    <Property Name="Pwd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="StandardId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SubjectId" Type="uniqueidentifier" />
+    <Property Name="CountryId" Type="uniqueidentifier" />
+    <Property Name="StateId" Type="uniqueidentifier" />
+    <Property Name="CityId" Type="uniqueidentifier" />
+    <Property Name="LocationId" Type="uniqueidentifier" />
+    <Property Name="FatherName" Type="varchar" MaxLength="100" />
+    <Property Name="MotherName" Type="varchar" MaxLength="100" />
+    <Property Name="AlternatePhone" Type="varchar" MaxLength="15" />
+    <Property Name="AlternateEmail" Type="varchar" MaxLength="50" />
+    <Property Name="EmailVerified" Type="bit" />
+    <Property Name="Occupation" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="PinCode" Type="varchar" MaxLength="10" />
+    <Property Name="Subjects" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="tbl_UserDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="CountryId" Type="uniqueidentifier" />
+    <Property Name="StateId" Type="uniqueidentifier" />
+    <Property Name="CityId" Type="uniqueidentifier" />
+    <Property Name="LocationId" Type="uniqueidentifier" />
+    <Property Name="FatherName" Type="varchar" MaxLength="100" />
+    <Property Name="MotherName" Type="varchar" MaxLength="100" />
+    <Property Name="HomePhone" Type="varchar" MaxLength="15" />
+    <Property Name="AlternateEmail" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_UserLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PageName" Type="varchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdataedBy" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="tbl_UserType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TypeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UpdatedOn" Type="datetime" />
+    <Property Name="UpdatedBy" Type="uniqueidentifier" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__tbl_Map_R__Permi__1F63A897">
+    <End Role="tbl_Permission" Type="Self.tbl_Permission" Multiplicity="1" />
+    <End Role="tbl_Map_Role_Permission" Type="Self.tbl_Map_Role_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_Permission">
+        <PropertyRef Name="PermissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_R__RoleI__1A9EF37A">
+    <End Role="tbl_Role" Type="Self.tbl_Role" Multiplicity="1" />
+    <End Role="tbl_Map_Role_User" Type="Self.tbl_Map_Role_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_User">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_R__RoleI__1E6F845E">
+    <End Role="tbl_Role" Type="Self.tbl_Role" Multiplicity="1" />
+    <End Role="tbl_Map_Role_Permission" Type="Self.tbl_Map_Role_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_Permission">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_R__UserI__1B9317B3">
+    <End Role="tbl_User" Type="Self.tbl_User" Multiplicity="1" />
+    <End Role="tbl_Map_Role_User" Type="Self.tbl_Map_Role_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_User">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Board__3EA749C6">
+    <End Role="tbl_Board" Type="Self.tbl_Board" Multiplicity="0..1" />
+    <End Role="tbl_Question_Pattern" Type="Self.tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Board">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="BoardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Categ__671F4F74">
+    <End Role="tbl_Category_SubTopic" Type="Self.tbl_Category_SubTopic" Multiplicity="1" />
+    <End Role="tbl_Question_Pattern" Type="Self.tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Category_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="Category_SubTopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Level__681373AD">
+    <End Role="tbl_Level" Type="Self.tbl_Level" Multiplicity="1" />
+    <End Role="tbl_Question_Pattern" Type="Self.tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Level">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="LevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Stand__408F9238">
+    <End Role="tbl_Standard" Type="Self.tbl_Standard" Multiplicity="1" />
+    <End Role="tbl_Question_Pattern" Type="Self.tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Sub_T__662B2B3B">
+    <End Role="tbl_SubTopic" Type="Self.tbl_SubTopic" Multiplicity="1" />
+    <End Role="tbl_Question_Pattern" Type="Self.tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="Sub_TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Subje__3F9B6DFF">
+    <End Role="tbl_Subject" Type="Self.tbl_Subject" Multiplicity="1" />
+    <End Role="tbl_Question_Pattern" Type="Self.tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Topic__65370702">
+    <End Role="tbl_Topic" Type="Self.tbl_Topic" Multiplicity="1" />
+    <End Role="tbl_Question_Pattern" Type="Self.tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_User__Standa__308E3499">
+    <End Role="tbl_Standard" Type="Self.tbl_Standard" Multiplicity="1" />
+    <End Role="tbl_User" Type="Self.tbl_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_User">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_User__Subjec__318258D2">
+    <End Role="tbl_Subject" Type="Self.tbl_Subject" Multiplicity="0..1" />
+    <End Role="tbl_User" Type="Self.tbl_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_User">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__CityI__2DB1C7EE">
+    <End Role="tbl_City" Type="Self.tbl_City" Multiplicity="0..1" />
+    <End Role="tbl_UserDetails" Type="Self.tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__Count__2BC97F7C">
+    <End Role="tbl_Country" Type="Self.tbl_Country" Multiplicity="0..1" />
+    <End Role="tbl_UserDetails" Type="Self.tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__Locat__2EA5EC27">
+    <End Role="tbl_Location" Type="Self.tbl_Location" Multiplicity="0..1" />
+    <End Role="tbl_UserDetails" Type="Self.tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__State__2CBDA3B5">
+    <End Role="tbl_State" Type="Self.tbl_State" Multiplicity="0..1" />
+    <End Role="tbl_UserDetails" Type="Self.tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__UserI__2AD55B43">
+    <End Role="tbl_User" Type="Self.tbl_User" Multiplicity="0..1" />
+    <End Role="tbl_UserDetails" Type="Self.tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_City_tbl_State">
+    <End Role="tbl_State" Type="Self.tbl_State" Multiplicity="0..1" />
+    <End Role="tbl_City" Type="Self.tbl_City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_City">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Location_tbl_City">
+    <End Role="tbl_City" Type="Self.tbl_City" Multiplicity="0..1" />
+    <End Role="tbl_Location" Type="Self.tbl_Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Location">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Level">
+    <End Role="tbl_Level" Type="Self.tbl_Level" Multiplicity="0..1" />
+    <End Role="tbl_Standard_Level_Board_Mapping" Type="Self.tbl_Standard_Level_Board_Mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Level">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Standard_Level_Board_Mapping">
+        <PropertyRef Name="LevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Standard">
+    <End Role="tbl_Standard" Type="Self.tbl_Standard" Multiplicity="0..1" />
+    <End Role="tbl_Standard_Level_Board_Mapping" Type="Self.tbl_Standard_Level_Board_Mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Standard_Level_Board_Mapping">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Topic">
+    <End Role="tbl_Topic" Type="Self.tbl_Topic" Multiplicity="0..1" />
+    <End Role="tbl_Standard_Level_Board_Mapping" Type="Self.tbl_Standard_Level_Board_Mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Standard_Level_Board_Mapping">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_State_tbl_Country">
+    <End Role="tbl_Country" Type="Self.tbl_Country" Multiplicity="0..1" />
+    <End Role="tbl_State" Type="Self.tbl_State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_State">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_SubTopic_tbl_Topic">
+    <End Role="tbl_Topic" Type="Self.tbl_Topic" Multiplicity="0..1" />
+    <End Role="tbl_SubTopic" Type="Self.tbl_SubTopic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_SubTopic">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Topic_tbl_Subject">
+    <End Role="tbl_Subject" Type="Self.tbl_Subject" Multiplicity="0..1" />
+    <End Role="tbl_Topic" Type="Self.tbl_Topic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Topic">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PCM_LearningBuddyModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_AccessToken" EntityType="Self.tbl_AccessToken" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Board" EntityType="Self.tbl_Board" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Category" EntityType="Self.tbl_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Category_SubTopic" EntityType="Self.tbl_Category_SubTopic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_City" EntityType="Self.tbl_City" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Country" EntityType="Self.tbl_Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Image_Content" EntityType="Self.tbl_Image_Content" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Level" EntityType="Self.tbl_Level" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Location" EntityType="Self.tbl_Location" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Map_Role_Permission" EntityType="Self.tbl_Map_Role_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Map_Role_User" EntityType="Self.tbl_Map_Role_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Permission" EntityType="Self.tbl_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Question_Pattern" EntityType="Self.tbl_Question_Pattern" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Role" EntityType="Self.tbl_Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Standard" EntityType="Self.tbl_Standard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Standard_Level_Board_Mapping" EntityType="Self.tbl_Standard_Level_Board_Mapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_State" EntityType="Self.tbl_State" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Subject" EntityType="Self.tbl_Subject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_SubTopic" EntityType="Self.tbl_SubTopic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Topic" EntityType="Self.tbl_Topic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_User" EntityType="Self.tbl_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_UserDetails" EntityType="Self.tbl_UserDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_UserLog" EntityType="Self.tbl_UserLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_UserType" EntityType="Self.tbl_UserType" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__tbl_Map_R__Permi__1F63A897" Association="Self.FK__tbl_Map_R__Permi__1F63A897">
+      <End Role="tbl_Permission" EntitySet="tbl_Permission" />
+      <End Role="tbl_Map_Role_Permission" EntitySet="tbl_Map_Role_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_R__RoleI__1A9EF37A" Association="Self.FK__tbl_Map_R__RoleI__1A9EF37A">
+      <End Role="tbl_Role" EntitySet="tbl_Role" />
+      <End Role="tbl_Map_Role_User" EntitySet="tbl_Map_Role_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_R__RoleI__1E6F845E" Association="Self.FK__tbl_Map_R__RoleI__1E6F845E">
+      <End Role="tbl_Role" EntitySet="tbl_Role" />
+      <End Role="tbl_Map_Role_Permission" EntitySet="tbl_Map_Role_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_R__UserI__1B9317B3" Association="Self.FK__tbl_Map_R__UserI__1B9317B3">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_Map_Role_User" EntitySet="tbl_Map_Role_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Board__3EA749C6" Association="Self.FK__tbl_Quest__Board__3EA749C6">
+      <End Role="tbl_Board" EntitySet="tbl_Board" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Categ__671F4F74" Association="Self.FK__tbl_Quest__Categ__671F4F74">
+      <End Role="tbl_Category_SubTopic" EntitySet="tbl_Category_SubTopic" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Level__681373AD" Association="Self.FK__tbl_Quest__Level__681373AD">
+      <End Role="tbl_Level" EntitySet="tbl_Level" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Stand__408F9238" Association="Self.FK__tbl_Quest__Stand__408F9238">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Sub_T__662B2B3B" Association="Self.FK__tbl_Quest__Sub_T__662B2B3B">
+      <End Role="tbl_SubTopic" EntitySet="tbl_SubTopic" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Subje__3F9B6DFF" Association="Self.FK__tbl_Quest__Subje__3F9B6DFF">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Topic__65370702" Association="Self.FK__tbl_Quest__Topic__65370702">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_User__Standa__308E3499" Association="Self.FK__tbl_User__Standa__308E3499">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_User" EntitySet="tbl_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_User__Subjec__318258D2" Association="Self.FK__tbl_User__Subjec__318258D2">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_User" EntitySet="tbl_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__CityI__2DB1C7EE" Association="Self.FK__tbl_UserD__CityI__2DB1C7EE">
+      <End Role="tbl_City" EntitySet="tbl_City" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__Count__2BC97F7C" Association="Self.FK__tbl_UserD__Count__2BC97F7C">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__Locat__2EA5EC27" Association="Self.FK__tbl_UserD__Locat__2EA5EC27">
+      <End Role="tbl_Location" EntitySet="tbl_Location" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__State__2CBDA3B5" Association="Self.FK__tbl_UserD__State__2CBDA3B5">
+      <End Role="tbl_State" EntitySet="tbl_State" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__UserI__2AD55B43" Association="Self.FK__tbl_UserD__UserI__2AD55B43">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_City_tbl_State" Association="Self.FK_tbl_City_tbl_State">
+      <End Role="tbl_State" EntitySet="tbl_State" />
+      <End Role="tbl_City" EntitySet="tbl_City" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Location_tbl_City" Association="Self.FK_tbl_Location_tbl_City">
+      <End Role="tbl_City" EntitySet="tbl_City" />
+      <End Role="tbl_Location" EntitySet="tbl_Location" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Level" Association="Self.FK_tbl_Standard_Level_Board_Mapping_tbl_Level">
+      <End Role="tbl_Level" EntitySet="tbl_Level" />
+      <End Role="tbl_Standard_Level_Board_Mapping" EntitySet="tbl_Standard_Level_Board_Mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Standard" Association="Self.FK_tbl_Standard_Level_Board_Mapping_tbl_Standard">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Standard_Level_Board_Mapping" EntitySet="tbl_Standard_Level_Board_Mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Topic" Association="Self.FK_tbl_Standard_Level_Board_Mapping_tbl_Topic">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_Standard_Level_Board_Mapping" EntitySet="tbl_Standard_Level_Board_Mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_State_tbl_Country" Association="Self.FK_tbl_State_tbl_Country">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_State" EntitySet="tbl_State" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_SubTopic_tbl_Topic" Association="Self.FK_tbl_SubTopic_tbl_Topic">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_SubTopic" EntitySet="tbl_SubTopic" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Topic_tbl_Subject" Association="Self.FK_tbl_Topic_tbl_Subject">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

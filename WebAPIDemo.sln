@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIDemo", "WebAPIDemo\WebAPIDemo.csproj", "{88EE7A70-8120-4D24-AF94-C948180A6DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{88E26301-C0D3-40CE-B135-9AECE3E1FA60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessEntities", "BusinessEntities\BusinessEntities.csproj", "{3445965B-4B97-4B38-9BEE-EA04A0040157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessServices", "BusinessServices\BusinessServices.csproj", "{5EBE480C-F5B1-4210-926A-4A9AB1396DCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resolver", "Resolver\Resolver.csproj", "{5827DED0-1535-4B54-A9A3-CB2CBFA0FD31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88EE7A70-8120-4D24-AF94-C948180A6DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88EE7A70-8120-4D24-AF94-C948180A6DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88EE7A70-8120-4D24-AF94-C948180A6DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88EE7A70-8120-4D24-AF94-C948180A6DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E26301-C0D3-40CE-B135-9AECE3E1FA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E26301-C0D3-40CE-B135-9AECE3E1FA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E26301-C0D3-40CE-B135-9AECE3E1FA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E26301-C0D3-40CE-B135-9AECE3E1FA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3445965B-4B97-4B38-9BEE-EA04A0040157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3445965B-4B97-4B38-9BEE-EA04A0040157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3445965B-4B97-4B38-9BEE-EA04A0040157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3445965B-4B97-4B38-9BEE-EA04A0040157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EBE480C-F5B1-4210-926A-4A9AB1396DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBE480C-F5B1-4210-926A-4A9AB1396DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBE480C-F5B1-4210-926A-4A9AB1396DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBE480C-F5B1-4210-926A-4A9AB1396DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5827DED0-1535-4B54-A9A3-CB2CBFA0FD31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5827DED0-1535-4B54-A9A3-CB2CBFA0FD31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5827DED0-1535-4B54-A9A3-CB2CBFA0FD31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5827DED0-1535-4B54-A9A3-CB2CBFA0FD31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+		SolutionGuid = {AD4DB569-2FD3-4E9A-84B9-EDE7DE3BBB3B}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://stierproduct.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BusinessEntities\\BusinessEntities.csproj
+		SccProjectName1 = BusinessEntities
+		SccLocalPath1 = BusinessEntities
+		SccProjectUniqueName2 = BusinessServices\\BusinessServices.csproj
+		SccProjectName2 = BusinessServices
+		SccLocalPath2 = BusinessServices
+		SccProjectUniqueName3 = DataModel\\DataModel.csproj
+		SccProjectName3 = DataModel
+		SccLocalPath3 = DataModel
+		SccProjectUniqueName4 = Resolver\\Resolver.csproj
+		SccProjectName4 = Resolver
+		SccLocalPath4 = Resolver
+		SccProjectUniqueName5 = WebAPIDemo\\WebAPIDemo.csproj
+		SccProjectName5 = WebAPIDemo
+		SccLocalPath5 = WebAPIDemo
+	EndGlobalSection
+EndGlobal

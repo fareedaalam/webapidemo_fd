@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1834dbd864cf4092b758092a8f9e8842" Name="Diagram1" ShowGrid="true" ZoomLevel="71">
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_AccessToken" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Board" Width="1.5" PointX="3" PointY="46.625" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Category" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Category_SubTopic" Width="1.5" PointX="10.5" PointY="36.875" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_City" Width="1.5" PointX="5.25" PointY="62.25" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_ConceptMapping" Width="1.5" PointX="12.75" PointY="34.375" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Country" Width="1.5" PointX="0.75" PointY="39.875" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Curriculum" Width="1.5" PointX="10.5" PointY="47.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_CurriculumDetails" Width="1.5" PointX="12.75" PointY="47.625" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Image_Content" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Images" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Level" Width="1.5" PointX="10.5" PointY="43.375" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Location" Width="1.5" PointX="7.5" PointY="62.375" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Map_Role_Permission" Width="1.5" PointX="18.75" PointY="43.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Map_Role_User" Width="1.5" PointX="18.75" PointY="48.875" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Map_School_Board" Width="1.5" PointX="7.5" PointY="48.875" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Map_School_Standard" Width="1.5" PointX="10.5" PointY="53.875" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Map_School_Teacher" Width="1.5" PointX="18.75" PointY="52.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Map_Teacher_Standard" Width="1.5" PointX="7.5" PointY="52.5" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Map_User_Section" Width="1.5" PointX="13.5" PointY="57.625" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_MapParentChild" Width="1.5" PointX="18.75" PointY="64.25" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_MapSchoolTeacherStandard" Width="1.5" PointX="13.5" PointY="52.5" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_MapTeacherChild" Width="1.5" PointX="18.75" PointY="67.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_MapTeacherStudentQuiz" Width="1.5" PointX="21.75" PointY="59.625" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Nouns" Width="1.5" PointX="3" PointY="35.25" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_ParamDetail" Width="1.5" PointX="11.25" PointY="69.125" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_ParamMaster" Width="1.5" PointX="9" PointY="69.5" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Permission" Width="1.5" PointX="16.5" PointY="33.875" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Question_Pattern" Width="1.5" PointX="12.75" PointY="39.625" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Quiz" Width="1.5" PointX="10.5" PointY="58.375" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_QuizDetails" Width="1.5" PointX="12.75" PointY="63.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_QuizResponse" Width="1.5" PointX="18.75" PointY="57.125" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Role" Width="1.5" PointX="16.5" PointY="43.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_School" Width="1.5" PointX="5.25" PointY="47.875" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Solutions" Width="1.5" PointX="15" PointY="38.375" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Staging" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Standard" Width="1.5" PointX="5.25" PointY="55.25" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Standard_Level_Board_Mapping" Width="1.5" PointX="7.5" PointY="56.125" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_State" Width="1.5" PointX="3" PointY="62.125" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Subject" Width="1.5" PointX="8.25" PointY="43" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_SubTopic" Width="1.5" PointX="8.25" PointY="37.125" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_Topic" Width="1.5" PointX="6" PointY="37" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_UnitDetails" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_UnitMaster" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_UrlExpire" Width="1.5" PointX="6.75" PointY="4.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_User" Width="1.5" PointX="16.5" PointY="48.25" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_UserDetails" Width="1.5" PointX="21.75" PointY="53.375" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_UserLog" Width="1.5" PointX="4.75" PointY="7.75" />
+        <EntityTypeShape EntityType="PCM_LearningBuddyModel.tbl_UserType" Width="1.5" PointX="6.75" PointY="7.75" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Board__Count__09746778" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Board__Count__41EDCAC5" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Curri__Board__0C50D423" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Curri__Board__47A6A41B" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Stand__Board__28ED12D1" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Stand__Board__72910220" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_Map_School_Board_tbl_Board" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Categ__SubTo__0A688BB1" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Categ__SubTo__42E1EEFE" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Categ__Topic__0B5CAFEA" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Categ__Topic__43D61337" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Conce__Categ__23893F36" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quest__Categ__671F4F74" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Catego__1C873BEC" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Catego__662B2B3B" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_CategoryId" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_UserD__CityI__3CBF0154" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_UserD__CityI__3DB3258D" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_City_tbl_State" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_Location_tbl_City" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Conce__Topic__247D636F" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Curri__Count__0D44F85C" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Curri__Count__489AC854" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Nouns__Count__1A9EF37A" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Nouns__Count__5F7E2DAC" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Schoo__Count__2610A626" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Schoo__Count__6FB49575" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_UserD__Count__3EA749C6" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_UserD__Count__3F9B6DFF" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_State_tbl_Country" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Curri__Curri__10216507" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Curri__Curri__4B7734FF" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Curri__Stand__0E391C95" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Curri__Stand__498EEC8D" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Curri__Subje__0F2D40CE" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Curri__Subje__4A8310C6" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_LevelId" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_SubTopicId" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_TopicId" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quest__Level__681373AD" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Level" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_UserD__Locat__408F9238" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_UserD__Locat__4183B671" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_R__Permi__11158940" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_R__Permi__51300E55" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__1209AD79" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__5224328E" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__12FDD1B2" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__531856C7" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_R__UserI__1B9317B3" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_Map_School_Board_tbl_School" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_S__Schoo__04459E07" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_S__Stand__0539C240" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_S__Schoo__08162EEB" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_S__Teach__090A5324" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_T__Stand__0DCF0841" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_T__Teach__0CDAE408" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Secti__13F1F5EB" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Secti__55009F39" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Stand__14E61A24" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Stand__55F4C372" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Subje__15DA3E5D" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Subje__56E8E7AB" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_U__UserI__16CE6296" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Map_U__UserI__57DD0BE4" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_MapPa__Child__2D12A970" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_MapPa__Paren__2C1E8537" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_School" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Standard" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Subject" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Teacher" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Child__31D75E8D" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__30E33A54" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_MapTe__QuizI__17C286CF" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_MapTe__QuizI__5CA1C101" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Stude__18B6AB08" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Stude__5D95E53A" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__19AACF41" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__5E8A0973" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Param__Param__1B9317B3" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Param__Param__607251E5" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quest__Sub_T__662B2B3B" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quest__Subje__3F9B6DFF" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quest__Topic__65370702" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Solut__Patte__27F8EE98" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Solut__Patte__719CDDE7" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Standa__1D7B6025" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Standa__671F4F74" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Subjec__1E6F845E" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Subjec__681373AD" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__SubTop__1F63A897" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__SubTop__690797E6" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__TopicI__2057CCD0" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__TopicI__69FBBC1F" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__UserId__214BF109" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Quiz__UserId__6AEFE058" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_QuizD__QuizI__22401542" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_QuizD__QuizI__6BE40491" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizI__24285DB4" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizI__6DCC4D03" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizD__2334397B" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizD__6CD828CA" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_QuizR__Stude__251C81ED" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_QuizR__Stude__6EC0713C" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Schoo__State__2704CA5F" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_Schoo__State__70A8B9AE" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_User__School__29E1370A" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_User__School__793DFFAF" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_User__Standa__308E3499" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Standard" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Topic" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_UserD__State__4277DAAA" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_UserD__State__436BFEE3" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_Topic_tbl_Subject" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_UserSubject" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK_tbl_SubTopic_tbl_Topic" />
+        <AssociationConnector Association="PCM_LearningBuddyModel.FK__tbl_UserD__UserI__2AD55B43" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

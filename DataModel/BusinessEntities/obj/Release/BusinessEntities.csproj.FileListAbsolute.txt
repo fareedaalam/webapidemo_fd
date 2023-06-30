@@ -1,0 +1,6 @@
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\BusinessEntities\bin\Release\BusinessEntities.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\BusinessEntities\bin\Release\BusinessEntities.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\BusinessEntities\obj\Release\BusinessEntities.csprojResolveAssemblyReference.cache
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\BusinessEntities\obj\Release\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\BusinessEntities\obj\Release\BusinessEntities.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\BusinessEntities\obj\Release\BusinessEntities.pdb

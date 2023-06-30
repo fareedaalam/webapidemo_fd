@@ -1,0 +1,98 @@
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\Resolver.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\Resolver.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.Helpers.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.Mvc.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.Razor.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.WebPages.Deployment.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.WebPages.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.WebPages.Razor.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\Unity.Abstractions.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\Unity.Container.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\Unity.Mvc.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\WebActivatorEx.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.Helpers.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.Mvc.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.Razor.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.WebPages.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.WebPages.Deployment.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\System.Web.WebPages.Razor.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\bin\Release\Unity.Mvc.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\obj\Release\Resolver.csprojResolveAssemblyReference.cache
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\obj\Release\Resolver.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\Resolver\obj\Release\Resolver.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Resolver.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Resolver.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Helpers.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Mvc.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Razor.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Abstractions.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Container.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Mvc.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\WebActivatorEx.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Helpers.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Mvc.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Razor.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Mvc.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.csprojResolveAssemblyReference.cache
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.csproj.CoreCompileInputs.cache
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.csproj.CopyComplete
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Resolver.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Resolver.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Helpers.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Mvc.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Razor.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Abstractions.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Container.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Mvc.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\WebActivatorEx.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Helpers.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Mvc.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Razor.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Mvc.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.csprojAssemblyReference.cache
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.csproj.CoreCompileInputs.cache
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.csproj.CopyComplete
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Resolver.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Resolver.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Helpers.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Mvc.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Razor.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Deployment.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Razor.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Abstractions.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Container.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Mvc.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\WebActivatorEx.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Helpers.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Mvc.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.Razor.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Deployment.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\System.Web.WebPages.Razor.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\bin\Release\Unity.Mvc.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.csproj.CoreCompileInputs.cache
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.csproj.CopyComplete
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\Resolver\obj\Release\Resolver.csprojAssemblyReference.cache

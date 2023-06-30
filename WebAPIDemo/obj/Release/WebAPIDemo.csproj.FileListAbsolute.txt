@@ -1,0 +1,515 @@
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\ApplicationInsights.config
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\csc.exe
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\System.Collections.Immutable.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\System.Reflection.Metadata.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\vbc.exe
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\VBCSCompiler.exe
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\roslyn\VBCSCompiler.exe.config
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\WebAPIDemo.dll.config
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\WebAPIDemo.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\WebAPIDemo.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Antlr3.Runtime.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\BusinessEntities.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\BusinessServices.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\CommonServiceLocator.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\DataModel.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\EntityFramework.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\EntityFramework.SqlServer.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AI.DependencyCollector.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AI.Web.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AI.WindowsServer.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.ApplicationInsights.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AspNet.Identity.Core.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.Cookies.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.Facebook.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.Google.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.OAuth.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.Twitter.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Practices.Unity.Tracking.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Web.Infrastructure.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Newtonsoft.Json.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Owin.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Resolver.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Net.Http.Formatting.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Helpers.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Http.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Http.Owin.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Http.WebHost.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Mvc.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Optimization.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Razor.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.WebPages.Deployment.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.WebPages.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.WebPages.Razor.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Abstractions.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Configuration.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Container.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Interception.Configuration.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Interception.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Mvc.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Mvc3.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.RegistrationByConvention.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.ServiceLocation.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.WebApi.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\WebActivatorEx.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\WebGrease.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\AutoMapper.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\BusinessEntities.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\BusinessServices.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\DataModel.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Resolver.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\CommonServiceLocator.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AI.DependencyCollector.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AI.Web.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AI.WindowsServer.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.ApplicationInsights.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Newtonsoft.Json.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Net.Http.Formatting.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Helpers.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Http.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Http.WebHost.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Mvc.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Optimization.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Razor.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.WebPages.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.WebPages.Deployment.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.WebPages.Razor.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Configuration.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Interception.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Interception.Configuration.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.Mvc.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.RegistrationByConvention.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Unity.ServiceLocation.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Antlr3.Runtime.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\EntityFramework.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\EntityFramework.SqlServer.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AspNet.Identity.Core.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.Facebook.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.Cookies.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.OAuth.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.Google.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.Twitter.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Http.Owin.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\AutoMapper.xml
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\obj\Release\WebAPIDemo.csprojResolveAssemblyReference.cache
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\obj\Release\WebAPIDemo.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\obj\Release\WebAPIDemo.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Cors.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Http.Cors.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\WebAPIDemo\bin\System.Web.Http.Cors.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\ApplicationInsights.config
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\csc.exe
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\vbc.exe
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\VBCSCompiler.exe
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebAPIDemo.dll.config
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebAPIDemo.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebAPIDemo.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Antlr3.Runtime.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessEntities.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessServices.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\CommonServiceLocator.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\DataModel.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.SqlServer.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.Web.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.Unity.Tracking.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Newtonsoft.Json.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Owin.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Resolver.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Net.Http.Formatting.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Cors.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Helpers.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Cors.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Owin.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.WebHost.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Mvc.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Optimization.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Razor.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Razor.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Abstractions.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Configuration.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Container.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.Configuration.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Mvc.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Mvc3.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.RegistrationByConvention.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.ServiceLocation.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.WebApi.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebActivatorEx.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebGrease.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\AutoMapper.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessEntities.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessServices.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\DataModel.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\DataModel.dll.config
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Resolver.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\CommonServiceLocator.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.Web.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Net.Http.Formatting.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Cors.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Newtonsoft.Json.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Helpers.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.WebHost.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Mvc.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Optimization.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Razor.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Razor.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Configuration.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.Configuration.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Mvc.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.RegistrationByConvention.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.ServiceLocation.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Antlr3.Runtime.pdb
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.SqlServer.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Owin.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\AutoMapper.xml
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.csprojResolveAssemblyReference.cache
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.csproj.CoreCompileInputs.cache
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.csproj.CopyComplete
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.dll
+C:\Users\STIER SOLUTION\Source\Workspaces\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\ApplicationInsights.config
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\csc.exe
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\vbc.exe
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\VBCSCompiler.exe
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebAPIDemo.dll.config
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebAPIDemo.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebAPIDemo.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Antlr3.Runtime.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessEntities.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessServices.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\CommonServiceLocator.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\DataModel.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.SqlServer.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.Web.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.ApplicationInsights.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.Unity.Tracking.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Newtonsoft.Json.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Owin.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Resolver.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Net.Http.Formatting.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Cors.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Helpers.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Cors.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Owin.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.WebHost.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Mvc.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Optimization.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Razor.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Razor.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Abstractions.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Configuration.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Container.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.Configuration.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Mvc.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Mvc3.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.RegistrationByConvention.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.ServiceLocation.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.WebApi.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebActivatorEx.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebGrease.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\AutoMapper.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessEntities.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessServices.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\DataModel.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\DataModel.dll.config
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Resolver.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\CommonServiceLocator.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.Web.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.ApplicationInsights.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Net.Http.Formatting.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Cors.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Newtonsoft.Json.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Helpers.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.WebHost.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Mvc.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Optimization.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Razor.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Razor.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Configuration.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.Configuration.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Mvc.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.RegistrationByConvention.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.ServiceLocation.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Antlr3.Runtime.pdb
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.SqlServer.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Owin.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\AutoMapper.xml
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.csprojAssemblyReference.cache
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.csproj.CoreCompileInputs.cache
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.csproj.CopyComplete
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.dll
+C:\Users\FareedAlam\Source\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.csprojAssemblyReference.cache
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.csproj.CoreCompileInputs.cache
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\ApplicationInsights.config
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\csc.exe
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\System.Collections.Immutable.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\System.Reflection.Metadata.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\vbc.exe
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\VBCSCompiler.exe
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\roslyn\VBCSCompiler.exe.config
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebAPIDemo.dll.config
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebAPIDemo.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebAPIDemo.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebAPIDemo.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Antlr3.Runtime.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessEntities.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessServices.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\CommonServiceLocator.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\DataModel.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.SqlServer.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.Agent.Intercept.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.DependencyCollector.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.Web.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.WindowsServer.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.ApplicationInsights.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Core.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Cookies.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Facebook.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Google.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.OAuth.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Twitter.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.Unity.Tracking.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Web.Infrastructure.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Newtonsoft.Json.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Owin.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Resolver.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Net.Http.Formatting.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Cors.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Helpers.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Cors.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Owin.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.WebHost.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Mvc.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Optimization.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Razor.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Deployment.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Razor.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Abstractions.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Configuration.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Container.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.Configuration.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Mvc.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Mvc3.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.RegistrationByConvention.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.ServiceLocation.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.WebApi.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebActivatorEx.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\WebGrease.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\AutoMapper.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessEntities.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\BusinessServices.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\DataModel.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\DataModel.dll.config
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Resolver.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\CommonServiceLocator.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.DependencyCollector.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.Web.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AI.WindowsServer.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.ApplicationInsights.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Practices.ServiceLocation.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Net.Http.Formatting.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Cors.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Newtonsoft.Json.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Helpers.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.WebHost.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Mvc.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Optimization.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Razor.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Deployment.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.WebPages.Razor.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Configuration.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Interception.Configuration.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.Mvc.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.RegistrationByConvention.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Unity.ServiceLocation.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Antlr3.Runtime.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\EntityFramework.SqlServer.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Core.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Facebook.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Cookies.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.OAuth.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Google.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.Twitter.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\System.Web.Http.Owin.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\AutoMapper.xml
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.csproj.CopyComplete
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.dll
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\obj\Release\WebAPIDemo.pdb
+D:\workspace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\WebAPIDemo\bin\Swashbuckle.Core.dll

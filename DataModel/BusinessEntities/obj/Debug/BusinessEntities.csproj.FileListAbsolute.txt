@@ -1,0 +1,4 @@
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\RajeevWork\WebAPIDemo\WebAPIDemo\BusinessEntities\obj\Debug\BusinessEntities.pdb

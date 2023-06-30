@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3445965B-4B97-4B38-9BEE-EA04A0040157}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessEntities</RootNamespace>
+    <AssemblyName>BusinessEntities</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\QA\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConceptMappingEntity.cs" />
+    <Compile Include="DashboardParentEntity.cs" />
+    <Compile Include="DashboardTeacherEntity.cs" />
+    <Compile Include="DashboardStudentEntity.cs" />
+    <Compile Include="MailerEntity.cs" />
+    <Compile Include="MapParentChildEntity.cs" />
+    <Compile Include="MapSchoolBoardEntity.cs" />
+    <Compile Include="MapSchoolStandardEntity.cs" />
+    <Compile Include="MapSchoolTeacherEntity.cs" />
+    <Compile Include="MapTeacherChildEntity.cs" />
+    <Compile Include="MapTeacherStandardEntity.cs" />
+    <Compile Include="MapUserSectionEntity.cs" />
+    <Compile Include="MapTeacherStudentQuizEntity.cs" />
+    <Compile Include="ParamMasterEntity.cs" />
+    <Compile Include="QuizEntity.cs" />
+    <Compile Include="SchoolEntity.cs" />
+    <Compile Include="SolutionsEntity.cs" />
+    <Compile Include="BoardEntity.cs" />
+    <Compile Include="CategoryEntity.cs" />
+    <Compile Include="CategorySubTopicEntity.cs" />
+    <Compile Include="CityEntity.cs" />
+    <Compile Include="CountryEntity.cs" />
+    <Compile Include="CurriculumEntity.cs" />
+    <Compile Include="FunctionResponse.cs" />
+    <Compile Include="LevelEntity.cs" />
+    <Compile Include="LocationEntity.cs" />
+    <Compile Include="MappingEntity.cs" />
+    <Compile Include="MapRolePermissionEntity.cs" />
+    <Compile Include="MapRoleUserEntity.cs" />
+    <Compile Include="PermissionEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionPatternEntity.cs" />
+    <Compile Include="RoleEntity.cs" />
+    <Compile Include="StandardEntity.cs" />
+    <Compile Include="StateEntity.cs" />
+    <Compile Include="SubjectEntity.cs" />
+    <Compile Include="SubTopicEntity.cs" />
+    <Compile Include="TokenEntity.cs" />
+    <Compile Include="TopicEntity.cs" />
+    <Compile Include="UploadEntity.cs" />
+    <Compile Include="UserDetailsEntity.cs" />
+    <Compile Include="UserEntity.cs" />
+    <Compile Include="UserLogEntity.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

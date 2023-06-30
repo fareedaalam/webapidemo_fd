@@ -1,0 +1,5 @@
+D:\FareedWorkSpace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\BusinessEntities\bin\QA\BusinessEntities.dll
+D:\FareedWorkSpace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\BusinessEntities\bin\QA\BusinessEntities.pdb
+D:\FareedWorkSpace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\BusinessEntities\obj\QA\BusinessEntities.csproj.CoreCompileInputs.cache
+D:\FareedWorkSpace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\BusinessEntities\obj\QA\BusinessEntities.dll
+D:\FareedWorkSpace\TestPcmProject\BuildProcessTemplates\WebAPIDemo_FD\BusinessEntities\obj\QA\BusinessEntities.pdb

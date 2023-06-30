@@ -1,0 +1,2938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PCM_LearningBuddyModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="PCM_LearningBuddyEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <FunctionImport Name="StudentDashboard" ReturnType="Collection(PCM_LearningBuddyModel.StudentDashboard_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="TeacherDashboard">
+      <Parameter Name="Id" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <FunctionImport Name="Student_Dashboard" ReturnType="Collection(PCM_LearningBuddyModel.Student_Dashboard_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Guid" />
+    </FunctionImport>
+    <EntitySet Name="tbl_Mailer" EntityType="PCM_LearningBuddyModel.tbl_Mailer" />
+    <EntitySet Name="tbl_AccessToken" EntityType="PCM_LearningBuddyModel.tbl_AccessToken" />
+    <EntitySet Name="tbl_Board" EntityType="PCM_LearningBuddyModel.tbl_Board" />
+    <EntitySet Name="tbl_Category" EntityType="PCM_LearningBuddyModel.tbl_Category" />
+    <EntitySet Name="tbl_Category_SubTopic" EntityType="PCM_LearningBuddyModel.tbl_Category_SubTopic" />
+    <EntitySet Name="tbl_City" EntityType="PCM_LearningBuddyModel.tbl_City" />
+    <EntitySet Name="tbl_ConceptMapping" EntityType="PCM_LearningBuddyModel.tbl_ConceptMapping" />
+    <EntitySet Name="tbl_Country" EntityType="PCM_LearningBuddyModel.tbl_Country" />
+    <EntitySet Name="tbl_Curriculum" EntityType="PCM_LearningBuddyModel.tbl_Curriculum" />
+    <EntitySet Name="tbl_CurriculumDetails" EntityType="PCM_LearningBuddyModel.tbl_CurriculumDetails" />
+    <EntitySet Name="tbl_Image_Content" EntityType="PCM_LearningBuddyModel.tbl_Image_Content" />
+    <EntitySet Name="tbl_Images" EntityType="PCM_LearningBuddyModel.tbl_Images" />
+    <EntitySet Name="tbl_Level" EntityType="PCM_LearningBuddyModel.tbl_Level" />
+    <EntitySet Name="tbl_Location" EntityType="PCM_LearningBuddyModel.tbl_Location" />
+    <EntitySet Name="tbl_Map_Role_Permission" EntityType="PCM_LearningBuddyModel.tbl_Map_Role_Permission" />
+    <EntitySet Name="tbl_Map_Role_User" EntityType="PCM_LearningBuddyModel.tbl_Map_Role_User" />
+    <EntitySet Name="tbl_Map_School_Board" EntityType="PCM_LearningBuddyModel.tbl_Map_School_Board" />
+    <EntitySet Name="tbl_Map_School_Standard" EntityType="PCM_LearningBuddyModel.tbl_Map_School_Standard" />
+    <EntitySet Name="tbl_Map_School_Teacher" EntityType="PCM_LearningBuddyModel.tbl_Map_School_Teacher" />
+    <EntitySet Name="tbl_Map_Teacher_Standard" EntityType="PCM_LearningBuddyModel.tbl_Map_Teacher_Standard" />
+    <EntitySet Name="tbl_Map_User_Section" EntityType="PCM_LearningBuddyModel.tbl_Map_User_Section" />
+    <EntitySet Name="tbl_MapParentChild" EntityType="PCM_LearningBuddyModel.tbl_MapParentChild" />
+    <EntitySet Name="tbl_MapSchoolTeacherStandard" EntityType="PCM_LearningBuddyModel.tbl_MapSchoolTeacherStandard" />
+    <EntitySet Name="tbl_MapTeacherChild" EntityType="PCM_LearningBuddyModel.tbl_MapTeacherChild" />
+    <EntitySet Name="tbl_MapTeacherStudentQuiz" EntityType="PCM_LearningBuddyModel.tbl_MapTeacherStudentQuiz" />
+    <EntitySet Name="tbl_Nouns" EntityType="PCM_LearningBuddyModel.tbl_Nouns" />
+    <EntitySet Name="tbl_ParamDetail" EntityType="PCM_LearningBuddyModel.tbl_ParamDetail" />
+    <EntitySet Name="tbl_ParamMaster" EntityType="PCM_LearningBuddyModel.tbl_ParamMaster" />
+    <EntitySet Name="tbl_Permission" EntityType="PCM_LearningBuddyModel.tbl_Permission" />
+    <EntitySet Name="tbl_Question_Pattern" EntityType="PCM_LearningBuddyModel.tbl_Question_Pattern" />
+    <EntitySet Name="tbl_Quiz" EntityType="PCM_LearningBuddyModel.tbl_Quiz" />
+    <EntitySet Name="tbl_QuizDetails" EntityType="PCM_LearningBuddyModel.tbl_QuizDetails" />
+    <EntitySet Name="tbl_QuizResponse" EntityType="PCM_LearningBuddyModel.tbl_QuizResponse" />
+    <EntitySet Name="tbl_Role" EntityType="PCM_LearningBuddyModel.tbl_Role" />
+    <EntitySet Name="tbl_School" EntityType="PCM_LearningBuddyModel.tbl_School" />
+    <EntitySet Name="tbl_Solutions" EntityType="PCM_LearningBuddyModel.tbl_Solutions" />
+    <EntitySet Name="tbl_Staging" EntityType="PCM_LearningBuddyModel.tbl_Staging" />
+    <EntitySet Name="tbl_Standard" EntityType="PCM_LearningBuddyModel.tbl_Standard" />
+    <EntitySet Name="tbl_Standard_Level_Board_Mapping" EntityType="PCM_LearningBuddyModel.tbl_Standard_Level_Board_Mapping" />
+    <EntitySet Name="tbl_State" EntityType="PCM_LearningBuddyModel.tbl_State" />
+    <EntitySet Name="tbl_Subject" EntityType="PCM_LearningBuddyModel.tbl_Subject" />
+    <EntitySet Name="tbl_SubTopic" EntityType="PCM_LearningBuddyModel.tbl_SubTopic" />
+    <EntitySet Name="tbl_Topic" EntityType="PCM_LearningBuddyModel.tbl_Topic" />
+    <EntitySet Name="tbl_UnitDetails" EntityType="PCM_LearningBuddyModel.tbl_UnitDetails" />
+    <EntitySet Name="tbl_UnitMaster" EntityType="PCM_LearningBuddyModel.tbl_UnitMaster" />
+    <EntitySet Name="tbl_UrlExpire" EntityType="PCM_LearningBuddyModel.tbl_UrlExpire" />
+    <EntitySet Name="tbl_User" EntityType="PCM_LearningBuddyModel.tbl_User" />
+    <EntitySet Name="tbl_UserDetails" EntityType="PCM_LearningBuddyModel.tbl_UserDetails" />
+    <EntitySet Name="tbl_UserLog" EntityType="PCM_LearningBuddyModel.tbl_UserLog" />
+    <EntitySet Name="tbl_UserType" EntityType="PCM_LearningBuddyModel.tbl_UserType" />
+    <AssociationSet Name="FK__tbl_Board__Count__09746778" Association="PCM_LearningBuddyModel.FK__tbl_Board__Count__09746778">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_Board" EntitySet="tbl_Board" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Board__Count__41EDCAC5" Association="PCM_LearningBuddyModel.FK__tbl_Board__Count__41EDCAC5">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_Board" EntitySet="tbl_Board" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Curri__Board__0C50D423" Association="PCM_LearningBuddyModel.FK__tbl_Curri__Board__0C50D423">
+      <End Role="tbl_Board" EntitySet="tbl_Board" />
+      <End Role="tbl_Curriculum" EntitySet="tbl_Curriculum" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Curri__Board__47A6A41B" Association="PCM_LearningBuddyModel.FK__tbl_Curri__Board__47A6A41B">
+      <End Role="tbl_Board" EntitySet="tbl_Board" />
+      <End Role="tbl_Curriculum" EntitySet="tbl_Curriculum" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Stand__Board__28ED12D1" Association="PCM_LearningBuddyModel.FK__tbl_Stand__Board__28ED12D1">
+      <End Role="tbl_Board" EntitySet="tbl_Board" />
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Stand__Board__72910220" Association="PCM_LearningBuddyModel.FK__tbl_Stand__Board__72910220">
+      <End Role="tbl_Board" EntitySet="tbl_Board" />
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Map_School_Board_tbl_Board" Association="PCM_LearningBuddyModel.FK_tbl_Map_School_Board_tbl_Board">
+      <End Role="tbl_Board" EntitySet="tbl_Board" />
+      <End Role="tbl_Map_School_Board" EntitySet="tbl_Map_School_Board" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Categ__SubTo__0A688BB1" Association="PCM_LearningBuddyModel.FK__tbl_Categ__SubTo__0A688BB1">
+      <End Role="tbl_SubTopic" EntitySet="tbl_SubTopic" />
+      <End Role="tbl_Category_SubTopic" EntitySet="tbl_Category_SubTopic" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Categ__SubTo__42E1EEFE" Association="PCM_LearningBuddyModel.FK__tbl_Categ__SubTo__42E1EEFE">
+      <End Role="tbl_SubTopic" EntitySet="tbl_SubTopic" />
+      <End Role="tbl_Category_SubTopic" EntitySet="tbl_Category_SubTopic" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Categ__Topic__0B5CAFEA" Association="PCM_LearningBuddyModel.FK__tbl_Categ__Topic__0B5CAFEA">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_Category_SubTopic" EntitySet="tbl_Category_SubTopic" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Categ__Topic__43D61337" Association="PCM_LearningBuddyModel.FK__tbl_Categ__Topic__43D61337">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_Category_SubTopic" EntitySet="tbl_Category_SubTopic" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Conce__Categ__23893F36" Association="PCM_LearningBuddyModel.FK__tbl_Conce__Categ__23893F36">
+      <End Role="tbl_Category_SubTopic" EntitySet="tbl_Category_SubTopic" />
+      <End Role="tbl_ConceptMapping" EntitySet="tbl_ConceptMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Categ__671F4F74" Association="PCM_LearningBuddyModel.FK__tbl_Quest__Categ__671F4F74">
+      <End Role="tbl_Category_SubTopic" EntitySet="tbl_Category_SubTopic" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__Catego__1C873BEC" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Catego__1C873BEC">
+      <End Role="tbl_Category_SubTopic" EntitySet="tbl_Category_SubTopic" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__Catego__662B2B3B" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Catego__662B2B3B">
+      <End Role="tbl_Category_SubTopic" EntitySet="tbl_Category_SubTopic" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryId" Association="PCM_LearningBuddyModel.FK_CategoryId">
+      <End Role="tbl_Category_SubTopic" EntitySet="tbl_Category_SubTopic" />
+      <End Role="tbl_CurriculumDetails" EntitySet="tbl_CurriculumDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__CityI__3CBF0154" Association="PCM_LearningBuddyModel.FK__tbl_UserD__CityI__3CBF0154">
+      <End Role="tbl_City" EntitySet="tbl_City" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__CityI__3DB3258D" Association="PCM_LearningBuddyModel.FK__tbl_UserD__CityI__3DB3258D">
+      <End Role="tbl_City" EntitySet="tbl_City" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_City_tbl_State" Association="PCM_LearningBuddyModel.FK_tbl_City_tbl_State">
+      <End Role="tbl_State" EntitySet="tbl_State" />
+      <End Role="tbl_City" EntitySet="tbl_City" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Location_tbl_City" Association="PCM_LearningBuddyModel.FK_tbl_Location_tbl_City">
+      <End Role="tbl_City" EntitySet="tbl_City" />
+      <End Role="tbl_Location" EntitySet="tbl_Location" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Conce__Topic__247D636F" Association="PCM_LearningBuddyModel.FK__tbl_Conce__Topic__247D636F">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_ConceptMapping" EntitySet="tbl_ConceptMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Curri__Count__0D44F85C" Association="PCM_LearningBuddyModel.FK__tbl_Curri__Count__0D44F85C">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_Curriculum" EntitySet="tbl_Curriculum" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Curri__Count__489AC854" Association="PCM_LearningBuddyModel.FK__tbl_Curri__Count__489AC854">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_Curriculum" EntitySet="tbl_Curriculum" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Nouns__Count__1A9EF37A" Association="PCM_LearningBuddyModel.FK__tbl_Nouns__Count__1A9EF37A">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_Nouns" EntitySet="tbl_Nouns" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Nouns__Count__5F7E2DAC" Association="PCM_LearningBuddyModel.FK__tbl_Nouns__Count__5F7E2DAC">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_Nouns" EntitySet="tbl_Nouns" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Schoo__Count__2610A626" Association="PCM_LearningBuddyModel.FK__tbl_Schoo__Count__2610A626">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_School" EntitySet="tbl_School" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Schoo__Count__6FB49575" Association="PCM_LearningBuddyModel.FK__tbl_Schoo__Count__6FB49575">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_School" EntitySet="tbl_School" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__Count__3EA749C6" Association="PCM_LearningBuddyModel.FK__tbl_UserD__Count__3EA749C6">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__Count__3F9B6DFF" Association="PCM_LearningBuddyModel.FK__tbl_UserD__Count__3F9B6DFF">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_State_tbl_Country" Association="PCM_LearningBuddyModel.FK_tbl_State_tbl_Country">
+      <End Role="tbl_Country" EntitySet="tbl_Country" />
+      <End Role="tbl_State" EntitySet="tbl_State" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Curri__Curri__10216507" Association="PCM_LearningBuddyModel.FK__tbl_Curri__Curri__10216507">
+      <End Role="tbl_Curriculum" EntitySet="tbl_Curriculum" />
+      <End Role="tbl_CurriculumDetails" EntitySet="tbl_CurriculumDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Curri__Curri__4B7734FF" Association="PCM_LearningBuddyModel.FK__tbl_Curri__Curri__4B7734FF">
+      <End Role="tbl_Curriculum" EntitySet="tbl_Curriculum" />
+      <End Role="tbl_CurriculumDetails" EntitySet="tbl_CurriculumDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Curri__Stand__0E391C95" Association="PCM_LearningBuddyModel.FK__tbl_Curri__Stand__0E391C95">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Curriculum" EntitySet="tbl_Curriculum" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Curri__Stand__498EEC8D" Association="PCM_LearningBuddyModel.FK__tbl_Curri__Stand__498EEC8D">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Curriculum" EntitySet="tbl_Curriculum" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Curri__Subje__0F2D40CE" Association="PCM_LearningBuddyModel.FK__tbl_Curri__Subje__0F2D40CE">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_Curriculum" EntitySet="tbl_Curriculum" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Curri__Subje__4A8310C6" Association="PCM_LearningBuddyModel.FK__tbl_Curri__Subje__4A8310C6">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_Curriculum" EntitySet="tbl_Curriculum" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LevelId" Association="PCM_LearningBuddyModel.FK_LevelId">
+      <End Role="tbl_Level" EntitySet="tbl_Level" />
+      <End Role="tbl_CurriculumDetails" EntitySet="tbl_CurriculumDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubTopicId" Association="PCM_LearningBuddyModel.FK_SubTopicId">
+      <End Role="tbl_SubTopic" EntitySet="tbl_SubTopic" />
+      <End Role="tbl_CurriculumDetails" EntitySet="tbl_CurriculumDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TopicId" Association="PCM_LearningBuddyModel.FK_TopicId">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_CurriculumDetails" EntitySet="tbl_CurriculumDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Level__681373AD" Association="PCM_LearningBuddyModel.FK__tbl_Quest__Level__681373AD">
+      <End Role="tbl_Level" EntitySet="tbl_Level" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Level" Association="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Level">
+      <End Role="tbl_Level" EntitySet="tbl_Level" />
+      <End Role="tbl_Standard_Level_Board_Mapping" EntitySet="tbl_Standard_Level_Board_Mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__Locat__408F9238" Association="PCM_LearningBuddyModel.FK__tbl_UserD__Locat__408F9238">
+      <End Role="tbl_Location" EntitySet="tbl_Location" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__Locat__4183B671" Association="PCM_LearningBuddyModel.FK__tbl_UserD__Locat__4183B671">
+      <End Role="tbl_Location" EntitySet="tbl_Location" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_R__Permi__11158940" Association="PCM_LearningBuddyModel.FK__tbl_Map_R__Permi__11158940">
+      <End Role="tbl_Permission" EntitySet="tbl_Permission" />
+      <End Role="tbl_Map_Role_Permission" EntitySet="tbl_Map_Role_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_R__Permi__51300E55" Association="PCM_LearningBuddyModel.FK__tbl_Map_R__Permi__51300E55">
+      <End Role="tbl_Permission" EntitySet="tbl_Permission" />
+      <End Role="tbl_Map_Role_Permission" EntitySet="tbl_Map_Role_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_R__RoleI__1209AD79" Association="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__1209AD79">
+      <End Role="tbl_Role" EntitySet="tbl_Role" />
+      <End Role="tbl_Map_Role_Permission" EntitySet="tbl_Map_Role_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_R__RoleI__5224328E" Association="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__5224328E">
+      <End Role="tbl_Role" EntitySet="tbl_Role" />
+      <End Role="tbl_Map_Role_Permission" EntitySet="tbl_Map_Role_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_R__RoleI__12FDD1B2" Association="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__12FDD1B2">
+      <End Role="tbl_Role" EntitySet="tbl_Role" />
+      <End Role="tbl_Map_Role_User" EntitySet="tbl_Map_Role_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_R__RoleI__531856C7" Association="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__531856C7">
+      <End Role="tbl_Role" EntitySet="tbl_Role" />
+      <End Role="tbl_Map_Role_User" EntitySet="tbl_Map_Role_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_R__UserI__1B9317B3" Association="PCM_LearningBuddyModel.FK__tbl_Map_R__UserI__1B9317B3">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_Map_Role_User" EntitySet="tbl_Map_Role_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Map_School_Board_tbl_School" Association="PCM_LearningBuddyModel.FK_tbl_Map_School_Board_tbl_School">
+      <End Role="tbl_School" EntitySet="tbl_School" />
+      <End Role="tbl_Map_School_Board" EntitySet="tbl_Map_School_Board" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_S__Schoo__04459E07" Association="PCM_LearningBuddyModel.FK__tbl_Map_S__Schoo__04459E07">
+      <End Role="tbl_School" EntitySet="tbl_School" />
+      <End Role="tbl_Map_School_Standard" EntitySet="tbl_Map_School_Standard" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_S__Stand__0539C240" Association="PCM_LearningBuddyModel.FK__tbl_Map_S__Stand__0539C240">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Map_School_Standard" EntitySet="tbl_Map_School_Standard" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_S__Schoo__08162EEB" Association="PCM_LearningBuddyModel.FK__tbl_Map_S__Schoo__08162EEB">
+      <End Role="tbl_School" EntitySet="tbl_School" />
+      <End Role="tbl_Map_School_Teacher" EntitySet="tbl_Map_School_Teacher" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_S__Teach__090A5324" Association="PCM_LearningBuddyModel.FK__tbl_Map_S__Teach__090A5324">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_Map_School_Teacher" EntitySet="tbl_Map_School_Teacher" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_T__Stand__0DCF0841" Association="PCM_LearningBuddyModel.FK__tbl_Map_T__Stand__0DCF0841">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Map_Teacher_Standard" EntitySet="tbl_Map_Teacher_Standard" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_T__Teach__0CDAE408" Association="PCM_LearningBuddyModel.FK__tbl_Map_T__Teach__0CDAE408">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_Map_Teacher_Standard" EntitySet="tbl_Map_Teacher_Standard" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_U__Secti__13F1F5EB" Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Secti__13F1F5EB">
+      <End Role="tbl_ParamDetail" EntitySet="tbl_ParamDetail" />
+      <End Role="tbl_Map_User_Section" EntitySet="tbl_Map_User_Section" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_U__Secti__55009F39" Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Secti__55009F39">
+      <End Role="tbl_ParamDetail" EntitySet="tbl_ParamDetail" />
+      <End Role="tbl_Map_User_Section" EntitySet="tbl_Map_User_Section" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_U__Stand__14E61A24" Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Stand__14E61A24">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Map_User_Section" EntitySet="tbl_Map_User_Section" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_U__Stand__55F4C372" Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Stand__55F4C372">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Map_User_Section" EntitySet="tbl_Map_User_Section" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_U__Subje__15DA3E5D" Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Subje__15DA3E5D">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_Map_User_Section" EntitySet="tbl_Map_User_Section" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_U__Subje__56E8E7AB" Association="PCM_LearningBuddyModel.FK__tbl_Map_U__Subje__56E8E7AB">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_Map_User_Section" EntitySet="tbl_Map_User_Section" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_U__UserI__16CE6296" Association="PCM_LearningBuddyModel.FK__tbl_Map_U__UserI__16CE6296">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_Map_User_Section" EntitySet="tbl_Map_User_Section" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Map_U__UserI__57DD0BE4" Association="PCM_LearningBuddyModel.FK__tbl_Map_U__UserI__57DD0BE4">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_Map_User_Section" EntitySet="tbl_Map_User_Section" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_MapPa__Child__2D12A970" Association="PCM_LearningBuddyModel.FK__tbl_MapPa__Child__2D12A970">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_MapParentChild" EntitySet="tbl_MapParentChild" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_MapPa__Paren__2C1E8537" Association="PCM_LearningBuddyModel.FK__tbl_MapPa__Paren__2C1E8537">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_MapParentChild" EntitySet="tbl_MapParentChild" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_MapSchoolTeacherStandard_tbl_School" Association="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_School">
+      <End Role="tbl_School" EntitySet="tbl_School" />
+      <End Role="tbl_MapSchoolTeacherStandard" EntitySet="tbl_MapSchoolTeacherStandard" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_MapSchoolTeacherStandard_tbl_Standard" Association="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Standard">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_MapSchoolTeacherStandard" EntitySet="tbl_MapSchoolTeacherStandard" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_MapSchoolTeacherStandard_tbl_Subject" Association="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Subject">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_MapSchoolTeacherStandard" EntitySet="tbl_MapSchoolTeacherStandard" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_MapSchoolTeacherStandard_tbl_Teacher" Association="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Teacher">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_MapSchoolTeacherStandard" EntitySet="tbl_MapSchoolTeacherStandard" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_MapTe__Child__31D75E8D" Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Child__31D75E8D">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_MapTeacherChild" EntitySet="tbl_MapTeacherChild" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_MapTe__Teach__30E33A54" Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__30E33A54">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_MapTeacherChild" EntitySet="tbl_MapTeacherChild" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_MapTe__QuizI__17C286CF" Association="PCM_LearningBuddyModel.FK__tbl_MapTe__QuizI__17C286CF">
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+      <End Role="tbl_MapTeacherStudentQuiz" EntitySet="tbl_MapTeacherStudentQuiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_MapTe__QuizI__5CA1C101" Association="PCM_LearningBuddyModel.FK__tbl_MapTe__QuizI__5CA1C101">
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+      <End Role="tbl_MapTeacherStudentQuiz" EntitySet="tbl_MapTeacherStudentQuiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_MapTe__Stude__18B6AB08" Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Stude__18B6AB08">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_MapTeacherStudentQuiz" EntitySet="tbl_MapTeacherStudentQuiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_MapTe__Stude__5D95E53A" Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Stude__5D95E53A">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_MapTeacherStudentQuiz" EntitySet="tbl_MapTeacherStudentQuiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_MapTe__Teach__19AACF41" Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__19AACF41">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_MapTeacherStudentQuiz" EntitySet="tbl_MapTeacherStudentQuiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_MapTe__Teach__5E8A0973" Association="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__5E8A0973">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_MapTeacherStudentQuiz" EntitySet="tbl_MapTeacherStudentQuiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Param__Param__1B9317B3" Association="PCM_LearningBuddyModel.FK__tbl_Param__Param__1B9317B3">
+      <End Role="tbl_ParamMaster" EntitySet="tbl_ParamMaster" />
+      <End Role="tbl_ParamDetail" EntitySet="tbl_ParamDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Param__Param__607251E5" Association="PCM_LearningBuddyModel.FK__tbl_Param__Param__607251E5">
+      <End Role="tbl_ParamMaster" EntitySet="tbl_ParamMaster" />
+      <End Role="tbl_ParamDetail" EntitySet="tbl_ParamDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Sub_T__662B2B3B" Association="PCM_LearningBuddyModel.FK__tbl_Quest__Sub_T__662B2B3B">
+      <End Role="tbl_SubTopic" EntitySet="tbl_SubTopic" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Subje__3F9B6DFF" Association="PCM_LearningBuddyModel.FK__tbl_Quest__Subje__3F9B6DFF">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quest__Topic__65370702" Association="PCM_LearningBuddyModel.FK__tbl_Quest__Topic__65370702">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Solut__Patte__27F8EE98" Association="PCM_LearningBuddyModel.FK__tbl_Solut__Patte__27F8EE98">
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+      <End Role="tbl_Solutions" EntitySet="tbl_Solutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Solut__Patte__719CDDE7" Association="PCM_LearningBuddyModel.FK__tbl_Solut__Patte__719CDDE7">
+      <End Role="tbl_Question_Pattern" EntitySet="tbl_Question_Pattern" />
+      <End Role="tbl_Solutions" EntitySet="tbl_Solutions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__Standa__1D7B6025" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Standa__1D7B6025">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__Standa__671F4F74" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Standa__671F4F74">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__Subjec__1E6F845E" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Subjec__1E6F845E">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__Subjec__681373AD" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__Subjec__681373AD">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__SubTop__1F63A897" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__SubTop__1F63A897">
+      <End Role="tbl_SubTopic" EntitySet="tbl_SubTopic" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__SubTop__690797E6" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__SubTop__690797E6">
+      <End Role="tbl_SubTopic" EntitySet="tbl_SubTopic" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__TopicI__2057CCD0" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__TopicI__2057CCD0">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__TopicI__69FBBC1F" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__TopicI__69FBBC1F">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__UserId__214BF109" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__UserId__214BF109">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Quiz__UserId__6AEFE058" Association="PCM_LearningBuddyModel.FK__tbl_Quiz__UserId__6AEFE058">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_QuizD__QuizI__22401542" Association="PCM_LearningBuddyModel.FK__tbl_QuizD__QuizI__22401542">
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+      <End Role="tbl_QuizDetails" EntitySet="tbl_QuizDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_QuizD__QuizI__6BE40491" Association="PCM_LearningBuddyModel.FK__tbl_QuizD__QuizI__6BE40491">
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+      <End Role="tbl_QuizDetails" EntitySet="tbl_QuizDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_QuizR__QuizI__24285DB4" Association="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizI__24285DB4">
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+      <End Role="tbl_QuizResponse" EntitySet="tbl_QuizResponse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_QuizR__QuizI__6DCC4D03" Association="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizI__6DCC4D03">
+      <End Role="tbl_Quiz" EntitySet="tbl_Quiz" />
+      <End Role="tbl_QuizResponse" EntitySet="tbl_QuizResponse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_QuizR__QuizD__2334397B" Association="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizD__2334397B">
+      <End Role="tbl_QuizDetails" EntitySet="tbl_QuizDetails" />
+      <End Role="tbl_QuizResponse" EntitySet="tbl_QuizResponse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_QuizR__QuizD__6CD828CA" Association="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizD__6CD828CA">
+      <End Role="tbl_QuizDetails" EntitySet="tbl_QuizDetails" />
+      <End Role="tbl_QuizResponse" EntitySet="tbl_QuizResponse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_QuizR__Stude__251C81ED" Association="PCM_LearningBuddyModel.FK__tbl_QuizR__Stude__251C81ED">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_QuizResponse" EntitySet="tbl_QuizResponse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_QuizR__Stude__6EC0713C" Association="PCM_LearningBuddyModel.FK__tbl_QuizR__Stude__6EC0713C">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_QuizResponse" EntitySet="tbl_QuizResponse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Schoo__State__2704CA5F" Association="PCM_LearningBuddyModel.FK__tbl_Schoo__State__2704CA5F">
+      <End Role="tbl_State" EntitySet="tbl_State" />
+      <End Role="tbl_School" EntitySet="tbl_School" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_Schoo__State__70A8B9AE" Association="PCM_LearningBuddyModel.FK__tbl_Schoo__State__70A8B9AE">
+      <End Role="tbl_State" EntitySet="tbl_State" />
+      <End Role="tbl_School" EntitySet="tbl_School" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_User__School__29E1370A" Association="PCM_LearningBuddyModel.FK__tbl_User__School__29E1370A">
+      <End Role="tbl_School" EntitySet="tbl_School" />
+      <End Role="tbl_User" EntitySet="tbl_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_User__School__793DFFAF" Association="PCM_LearningBuddyModel.FK__tbl_User__School__793DFFAF">
+      <End Role="tbl_School" EntitySet="tbl_School" />
+      <End Role="tbl_User" EntitySet="tbl_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_User__Standa__308E3499" Association="PCM_LearningBuddyModel.FK__tbl_User__Standa__308E3499">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_User" EntitySet="tbl_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Standard" Association="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Standard">
+      <End Role="tbl_Standard" EntitySet="tbl_Standard" />
+      <End Role="tbl_Standard_Level_Board_Mapping" EntitySet="tbl_Standard_Level_Board_Mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Topic" Association="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Topic">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_Standard_Level_Board_Mapping" EntitySet="tbl_Standard_Level_Board_Mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__State__4277DAAA" Association="PCM_LearningBuddyModel.FK__tbl_UserD__State__4277DAAA">
+      <End Role="tbl_State" EntitySet="tbl_State" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__State__436BFEE3" Association="PCM_LearningBuddyModel.FK__tbl_UserD__State__436BFEE3">
+      <End Role="tbl_State" EntitySet="tbl_State" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Topic_tbl_Subject" Association="PCM_LearningBuddyModel.FK_tbl_Topic_tbl_Subject">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubject" Association="PCM_LearningBuddyModel.FK_UserSubject">
+      <End Role="tbl_Subject" EntitySet="tbl_Subject" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_SubTopic_tbl_Topic" Association="PCM_LearningBuddyModel.FK_tbl_SubTopic_tbl_Topic">
+      <End Role="tbl_Topic" EntitySet="tbl_Topic" />
+      <End Role="tbl_SubTopic" EntitySet="tbl_SubTopic" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tbl_UserD__UserI__2AD55B43" Association="PCM_LearningBuddyModel.FK__tbl_UserD__UserI__2AD55B43">
+      <End Role="tbl_User" EntitySet="tbl_User" />
+      <End Role="tbl_UserDetails" EntitySet="tbl_UserDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="StudentDashboard_Result">
+    <Property Type="Guid" Name="Id" Nullable="false" />
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="Guid" Name="StandardId" Nullable="false" />
+    <Property Type="Guid" Name="SubjectId" Nullable="false" />
+    <Property Type="Guid" Name="TopicId" Nullable="false" />
+    <Property Type="Guid" Name="SubTopicId" Nullable="true" />
+    <Property Type="Guid" Name="CategoryId" Nullable="true" />
+    <Property Type="Int64" Name="TotalQuestions" Nullable="true" />
+    <Property Type="Int64" Name="Duration" Nullable="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="Guid" Name="CreatedBy" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="true" Precision="23" />
+    <Property Type="Guid" Name="UpdatedBy" Nullable="true" />
+    <Property Type="DateTime" Name="UpdatedOn" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="Student_Dashboard_Result">
+    <Property Type="Guid" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+    <Property Type="Int32" Name="Attepted" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="tbl_Mailer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Mailer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_AccessToken">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="AuthToken" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IssuedOn" Type="DateTime" Precision="3" />
+    <Property Name="ExpiresOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_Board">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CountryId" Type="Guid" />
+    <NavigationProperty Name="tbl_Country" Relationship="PCM_LearningBuddyModel.FK__tbl_Board__Count__09746778" FromRole="tbl_Board" ToRole="tbl_Country" />
+    <NavigationProperty Name="tbl_Country1" Relationship="PCM_LearningBuddyModel.FK__tbl_Board__Count__41EDCAC5" FromRole="tbl_Board" ToRole="tbl_Country" />
+    <NavigationProperty Name="tbl_Curriculum" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Board__0C50D423" FromRole="tbl_Board" ToRole="tbl_Curriculum" />
+    <NavigationProperty Name="tbl_Curriculum1" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Board__47A6A41B" FromRole="tbl_Board" ToRole="tbl_Curriculum" />
+    <NavigationProperty Name="tbl_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_Stand__Board__28ED12D1" FromRole="tbl_Board" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_Standard1" Relationship="PCM_LearningBuddyModel.FK__tbl_Stand__Board__72910220" FromRole="tbl_Board" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_Map_School_Board" Relationship="PCM_LearningBuddyModel.FK_tbl_Map_School_Board_tbl_Board" FromRole="tbl_Board" ToRole="tbl_Map_School_Board" />
+  </EntityType>
+  <EntityType Name="tbl_Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_Category_SubTopic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="TopicId" Type="Guid" />
+    <Property Name="SubTopicId" Type="Guid" />
+    <NavigationProperty Name="tbl_SubTopic" Relationship="PCM_LearningBuddyModel.FK__tbl_Categ__SubTo__0A688BB1" FromRole="tbl_Category_SubTopic" ToRole="tbl_SubTopic" />
+    <NavigationProperty Name="tbl_SubTopic1" Relationship="PCM_LearningBuddyModel.FK__tbl_Categ__SubTo__42E1EEFE" FromRole="tbl_Category_SubTopic" ToRole="tbl_SubTopic" />
+    <NavigationProperty Name="tbl_Topic" Relationship="PCM_LearningBuddyModel.FK__tbl_Categ__Topic__0B5CAFEA" FromRole="tbl_Category_SubTopic" ToRole="tbl_Topic" />
+    <NavigationProperty Name="tbl_Topic1" Relationship="PCM_LearningBuddyModel.FK__tbl_Categ__Topic__43D61337" FromRole="tbl_Category_SubTopic" ToRole="tbl_Topic" />
+    <NavigationProperty Name="tbl_ConceptMapping" Relationship="PCM_LearningBuddyModel.FK__tbl_Conce__Categ__23893F36" FromRole="tbl_Category_SubTopic" ToRole="tbl_ConceptMapping" />
+    <NavigationProperty Name="tbl_Question_Pattern" Relationship="PCM_LearningBuddyModel.FK__tbl_Quest__Categ__671F4F74" FromRole="tbl_Category_SubTopic" ToRole="tbl_Question_Pattern" />
+    <NavigationProperty Name="tbl_Quiz" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Catego__1C873BEC" FromRole="tbl_Category_SubTopic" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Quiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Catego__662B2B3B" FromRole="tbl_Category_SubTopic" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_CurriculumDetails" Relationship="PCM_LearningBuddyModel.FK_CategoryId" FromRole="tbl_Category_SubTopic" ToRole="tbl_CurriculumDetails" />
+  </EntityType>
+  <EntityType Name="tbl_City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="StateId" Type="Guid" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_UserDetails" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__CityI__3CBF0154" FromRole="tbl_City" ToRole="tbl_UserDetails" />
+    <NavigationProperty Name="tbl_UserDetails1" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__CityI__3DB3258D" FromRole="tbl_City" ToRole="tbl_UserDetails" />
+    <NavigationProperty Name="tbl_State" Relationship="PCM_LearningBuddyModel.FK_tbl_City_tbl_State" FromRole="tbl_City" ToRole="tbl_State" />
+    <NavigationProperty Name="tbl_Location" Relationship="PCM_LearningBuddyModel.FK_tbl_Location_tbl_City" FromRole="tbl_City" ToRole="tbl_Location" />
+  </EntityType>
+  <EntityType Name="tbl_ConceptMapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CategoryId" Type="Guid" Nullable="false" />
+    <Property Name="TopicId" Type="Guid" Nullable="false" />
+    <Property Name="Definition" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Example" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PointsToRemember" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_Category_SubTopic" Relationship="PCM_LearningBuddyModel.FK__tbl_Conce__Categ__23893F36" FromRole="tbl_ConceptMapping" ToRole="tbl_Category_SubTopic" />
+    <NavigationProperty Name="tbl_Topic" Relationship="PCM_LearningBuddyModel.FK__tbl_Conce__Topic__247D636F" FromRole="tbl_ConceptMapping" ToRole="tbl_Topic" />
+  </EntityType>
+  <EntityType Name="tbl_Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_Board" Relationship="PCM_LearningBuddyModel.FK__tbl_Board__Count__09746778" FromRole="tbl_Country" ToRole="tbl_Board" />
+    <NavigationProperty Name="tbl_Board1" Relationship="PCM_LearningBuddyModel.FK__tbl_Board__Count__41EDCAC5" FromRole="tbl_Country" ToRole="tbl_Board" />
+    <NavigationProperty Name="tbl_Curriculum" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Count__0D44F85C" FromRole="tbl_Country" ToRole="tbl_Curriculum" />
+    <NavigationProperty Name="tbl_Curriculum1" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Count__489AC854" FromRole="tbl_Country" ToRole="tbl_Curriculum" />
+    <NavigationProperty Name="tbl_Nouns" Relationship="PCM_LearningBuddyModel.FK__tbl_Nouns__Count__1A9EF37A" FromRole="tbl_Country" ToRole="tbl_Nouns" />
+    <NavigationProperty Name="tbl_Nouns1" Relationship="PCM_LearningBuddyModel.FK__tbl_Nouns__Count__5F7E2DAC" FromRole="tbl_Country" ToRole="tbl_Nouns" />
+    <NavigationProperty Name="tbl_School" Relationship="PCM_LearningBuddyModel.FK__tbl_Schoo__Count__2610A626" FromRole="tbl_Country" ToRole="tbl_School" />
+    <NavigationProperty Name="tbl_School1" Relationship="PCM_LearningBuddyModel.FK__tbl_Schoo__Count__6FB49575" FromRole="tbl_Country" ToRole="tbl_School" />
+    <NavigationProperty Name="tbl_UserDetails" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__Count__3EA749C6" FromRole="tbl_Country" ToRole="tbl_UserDetails" />
+    <NavigationProperty Name="tbl_UserDetails1" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__Count__3F9B6DFF" FromRole="tbl_Country" ToRole="tbl_UserDetails" />
+    <NavigationProperty Name="tbl_State" Relationship="PCM_LearningBuddyModel.FK_tbl_State_tbl_Country" FromRole="tbl_Country" ToRole="tbl_State" />
+  </EntityType>
+  <EntityType Name="tbl_Curriculum">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CountryId" Type="Guid" Nullable="false" />
+    <Property Name="BoardId" Type="Guid" Nullable="false" />
+    <Property Name="StandardId" Type="Guid" Nullable="false" />
+    <Property Name="SubjectId" Type="Guid" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_Board" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Board__0C50D423" FromRole="tbl_Curriculum" ToRole="tbl_Board" />
+    <NavigationProperty Name="tbl_Board1" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Board__47A6A41B" FromRole="tbl_Curriculum" ToRole="tbl_Board" />
+    <NavigationProperty Name="tbl_Country" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Count__0D44F85C" FromRole="tbl_Curriculum" ToRole="tbl_Country" />
+    <NavigationProperty Name="tbl_Country1" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Count__489AC854" FromRole="tbl_Curriculum" ToRole="tbl_Country" />
+    <NavigationProperty Name="tbl_CurriculumDetails" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Curri__10216507" FromRole="tbl_Curriculum" ToRole="tbl_CurriculumDetails" />
+    <NavigationProperty Name="tbl_CurriculumDetails1" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Curri__4B7734FF" FromRole="tbl_Curriculum" ToRole="tbl_CurriculumDetails" />
+    <NavigationProperty Name="tbl_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Stand__0E391C95" FromRole="tbl_Curriculum" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_Standard1" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Stand__498EEC8D" FromRole="tbl_Curriculum" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_Subject" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Subje__0F2D40CE" FromRole="tbl_Curriculum" ToRole="tbl_Subject" />
+    <NavigationProperty Name="tbl_Subject1" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Subje__4A8310C6" FromRole="tbl_Curriculum" ToRole="tbl_Subject" />
+  </EntityType>
+  <EntityType Name="tbl_CurriculumDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CurriculumId" Type="Guid" Nullable="false" />
+    <Property Name="TopicId" Type="Guid" Nullable="false" />
+    <Property Name="SubTopicId" Type="Guid" />
+    <Property Name="CategoryId" Type="Guid" />
+    <Property Name="LevelId" Type="Guid" />
+    <NavigationProperty Name="tbl_Category_SubTopic" Relationship="PCM_LearningBuddyModel.FK_CategoryId" FromRole="tbl_CurriculumDetails" ToRole="tbl_Category_SubTopic" />
+    <NavigationProperty Name="tbl_Curriculum" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Curri__10216507" FromRole="tbl_CurriculumDetails" ToRole="tbl_Curriculum" />
+    <NavigationProperty Name="tbl_Curriculum1" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Curri__4B7734FF" FromRole="tbl_CurriculumDetails" ToRole="tbl_Curriculum" />
+    <NavigationProperty Name="tbl_Level" Relationship="PCM_LearningBuddyModel.FK_LevelId" FromRole="tbl_CurriculumDetails" ToRole="tbl_Level" />
+    <NavigationProperty Name="tbl_SubTopic" Relationship="PCM_LearningBuddyModel.FK_SubTopicId" FromRole="tbl_CurriculumDetails" ToRole="tbl_SubTopic" />
+    <NavigationProperty Name="tbl_Topic" Relationship="PCM_LearningBuddyModel.FK_TopicId" FromRole="tbl_CurriculumDetails" ToRole="tbl_Topic" />
+  </EntityType>
+  <EntityType Name="tbl_Image_Content">
+    <Key>
+      <PropertyRef Name="ImageID" />
+    </Key>
+    <Property Name="ImageID" Type="Binary" Nullable="false" MaxLength="50" FixedLength="false" />
+    <Property Name="ImageName" Type="Binary" MaxLength="50" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_Images">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_Level">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="Range" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_CurriculumDetails" Relationship="PCM_LearningBuddyModel.FK_LevelId" FromRole="tbl_Level" ToRole="tbl_CurriculumDetails" />
+    <NavigationProperty Name="tbl_Question_Pattern" Relationship="PCM_LearningBuddyModel.FK__tbl_Quest__Level__681373AD" FromRole="tbl_Level" ToRole="tbl_Question_Pattern" />
+    <NavigationProperty Name="tbl_Standard_Level_Board_Mapping" Relationship="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Level" FromRole="tbl_Level" ToRole="tbl_Standard_Level_Board_Mapping" />
+  </EntityType>
+  <EntityType Name="tbl_Location">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CityId" Type="Guid" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_City" Relationship="PCM_LearningBuddyModel.FK_tbl_Location_tbl_City" FromRole="tbl_Location" ToRole="tbl_City" />
+    <NavigationProperty Name="tbl_UserDetails" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__Locat__408F9238" FromRole="tbl_Location" ToRole="tbl_UserDetails" />
+    <NavigationProperty Name="tbl_UserDetails1" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__Locat__4183B671" FromRole="tbl_Location" ToRole="tbl_UserDetails" />
+  </EntityType>
+  <EntityType Name="tbl_Map_Role_Permission">
+    <Key>
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="PermissionId" />
+    </Key>
+    <Property Name="RoleId" Type="Guid" Nullable="false" />
+    <Property Name="PermissionId" Type="Guid" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_Permission" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__Permi__11158940" FromRole="tbl_Map_Role_Permission" ToRole="tbl_Permission" />
+    <NavigationProperty Name="tbl_Permission1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__Permi__51300E55" FromRole="tbl_Map_Role_Permission" ToRole="tbl_Permission" />
+    <NavigationProperty Name="tbl_Role" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__1209AD79" FromRole="tbl_Map_Role_Permission" ToRole="tbl_Role" />
+    <NavigationProperty Name="tbl_Role1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__5224328E" FromRole="tbl_Map_Role_Permission" ToRole="tbl_Role" />
+  </EntityType>
+  <EntityType Name="tbl_Map_Role_User">
+    <Key>
+      <PropertyRef Name="RoleId" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="RoleId" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_Role" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__12FDD1B2" FromRole="tbl_Map_Role_User" ToRole="tbl_Role" />
+    <NavigationProperty Name="tbl_Role1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__531856C7" FromRole="tbl_Map_Role_User" ToRole="tbl_Role" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__UserI__1B9317B3" FromRole="tbl_Map_Role_User" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_Map_School_Board">
+    <Key>
+      <PropertyRef Name="SchoolId" />
+      <PropertyRef Name="BoardId" />
+    </Key>
+    <Property Name="SchoolId" Type="Guid" Nullable="false" />
+    <Property Name="BoardId" Type="Guid" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_Board" Relationship="PCM_LearningBuddyModel.FK_tbl_Map_School_Board_tbl_Board" FromRole="tbl_Map_School_Board" ToRole="tbl_Board" />
+    <NavigationProperty Name="tbl_School" Relationship="PCM_LearningBuddyModel.FK_tbl_Map_School_Board_tbl_School" FromRole="tbl_Map_School_Board" ToRole="tbl_School" />
+  </EntityType>
+  <EntityType Name="tbl_Map_School_Standard">
+    <Key>
+      <PropertyRef Name="SchoolId" />
+      <PropertyRef Name="StandardId" />
+    </Key>
+    <Property Name="SchoolId" Type="Guid" Nullable="false" />
+    <Property Name="StandardId" Type="Guid" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_School" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_S__Schoo__04459E07" FromRole="tbl_Map_School_Standard" ToRole="tbl_School" />
+    <NavigationProperty Name="tbl_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_S__Stand__0539C240" FromRole="tbl_Map_School_Standard" ToRole="tbl_Standard" />
+  </EntityType>
+  <EntityType Name="tbl_Map_School_Teacher">
+    <Key>
+      <PropertyRef Name="SchoolId" />
+      <PropertyRef Name="TeacherId" />
+    </Key>
+    <Property Name="SchoolId" Type="Guid" Nullable="false" />
+    <Property Name="TeacherId" Type="Guid" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_School" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_S__Schoo__08162EEB" FromRole="tbl_Map_School_Teacher" ToRole="tbl_School" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_S__Teach__090A5324" FromRole="tbl_Map_School_Teacher" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_Map_Teacher_Standard">
+    <Key>
+      <PropertyRef Name="TeacherId" />
+      <PropertyRef Name="StandardId" />
+    </Key>
+    <Property Name="TeacherId" Type="Guid" Nullable="false" />
+    <Property Name="StandardId" Type="Guid" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_T__Stand__0DCF0841" FromRole="tbl_Map_Teacher_Standard" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_T__Teach__0CDAE408" FromRole="tbl_Map_Teacher_Standard" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_Map_User_Section">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="SubjectId" Type="Guid" />
+    <Property Name="SectionId" Type="Guid" Nullable="false" />
+    <Property Name="StandardId" Type="Guid" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_ParamDetail" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Secti__13F1F5EB" FromRole="tbl_Map_User_Section" ToRole="tbl_ParamDetail" />
+    <NavigationProperty Name="tbl_ParamDetail1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Secti__55009F39" FromRole="tbl_Map_User_Section" ToRole="tbl_ParamDetail" />
+    <NavigationProperty Name="tbl_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Stand__14E61A24" FromRole="tbl_Map_User_Section" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_Standard1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Stand__55F4C372" FromRole="tbl_Map_User_Section" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_Subject" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Subje__15DA3E5D" FromRole="tbl_Map_User_Section" ToRole="tbl_Subject" />
+    <NavigationProperty Name="tbl_Subject1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Subje__56E8E7AB" FromRole="tbl_Map_User_Section" ToRole="tbl_Subject" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__UserI__16CE6296" FromRole="tbl_Map_User_Section" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_User1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__UserI__57DD0BE4" FromRole="tbl_Map_User_Section" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_MapParentChild">
+    <Key>
+      <PropertyRef Name="ParentId" />
+      <PropertyRef Name="ChildId" />
+    </Key>
+    <Property Name="ParentId" Type="Guid" Nullable="false" />
+    <Property Name="ChildId" Type="Guid" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_MapPa__Child__2D12A970" FromRole="tbl_MapParentChild" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_User1" Relationship="PCM_LearningBuddyModel.FK__tbl_MapPa__Paren__2C1E8537" FromRole="tbl_MapParentChild" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_MapSchoolTeacherStandard">
+    <Key>
+      <PropertyRef Name="SchoolId" />
+      <PropertyRef Name="TeacherId" />
+      <PropertyRef Name="StandardId" />
+      <PropertyRef Name="SubjectId" />
+    </Key>
+    <Property Name="SchoolId" Type="Guid" Nullable="false" />
+    <Property Name="TeacherId" Type="Guid" Nullable="false" />
+    <Property Name="StandardId" Type="Guid" Nullable="false" />
+    <Property Name="SubjectId" Type="Guid" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" Nullable="false" />
+    <Property Name="UpdatedBy" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="tbl_School" Relationship="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_School" FromRole="tbl_MapSchoolTeacherStandard" ToRole="tbl_School" />
+    <NavigationProperty Name="tbl_Standard" Relationship="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Standard" FromRole="tbl_MapSchoolTeacherStandard" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_Subject" Relationship="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Subject" FromRole="tbl_MapSchoolTeacherStandard" ToRole="tbl_Subject" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Teacher" FromRole="tbl_MapSchoolTeacherStandard" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_MapTeacherChild">
+    <Key>
+      <PropertyRef Name="TeacherId" />
+      <PropertyRef Name="ChildId" />
+    </Key>
+    <Property Name="TeacherId" Type="Guid" Nullable="false" />
+    <Property Name="ChildId" Type="Guid" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="Status" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Child__31D75E8D" FromRole="tbl_MapTeacherChild" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_User1" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__30E33A54" FromRole="tbl_MapTeacherChild" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_MapTeacherStudentQuiz">
+    <Key>
+      <PropertyRef Name="TeacherId" />
+      <PropertyRef Name="StudentId" />
+      <PropertyRef Name="QuizId" />
+    </Key>
+    <Property Name="TeacherId" Type="Guid" Nullable="false" />
+    <Property Name="StudentId" Type="Guid" Nullable="false" />
+    <Property Name="QuizId" Type="Guid" Nullable="false" />
+    <Property Name="Attempted" Type="Boolean" />
+    <Property Name="IsTimeUp" Type="Boolean" />
+    <Property Name="IsQuit" Type="Boolean" />
+    <Property Name="StartTime" Type="Time" Precision="7" />
+    <Property Name="EndTime" Type="Time" Precision="7" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Quiz" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__QuizI__17C286CF" FromRole="tbl_MapTeacherStudentQuiz" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Quiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__QuizI__5CA1C101" FromRole="tbl_MapTeacherStudentQuiz" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Stude__18B6AB08" FromRole="tbl_MapTeacherStudentQuiz" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_User1" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Stude__5D95E53A" FromRole="tbl_MapTeacherStudentQuiz" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_User2" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__19AACF41" FromRole="tbl_MapTeacherStudentQuiz" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_User3" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__5E8A0973" FromRole="tbl_MapTeacherStudentQuiz" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_Nouns">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CountryId" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_Country" Relationship="PCM_LearningBuddyModel.FK__tbl_Nouns__Count__1A9EF37A" FromRole="tbl_Nouns" ToRole="tbl_Country" />
+    <NavigationProperty Name="tbl_Country1" Relationship="PCM_LearningBuddyModel.FK__tbl_Nouns__Count__5F7E2DAC" FromRole="tbl_Nouns" ToRole="tbl_Country" />
+  </EntityType>
+  <EntityType Name="tbl_ParamDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="ParamID" Type="Guid" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_Map_User_Section" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Secti__13F1F5EB" FromRole="tbl_ParamDetail" ToRole="tbl_Map_User_Section" />
+    <NavigationProperty Name="tbl_Map_User_Section1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Secti__55009F39" FromRole="tbl_ParamDetail" ToRole="tbl_Map_User_Section" />
+    <NavigationProperty Name="tbl_ParamMaster" Relationship="PCM_LearningBuddyModel.FK__tbl_Param__Param__1B9317B3" FromRole="tbl_ParamDetail" ToRole="tbl_ParamMaster" />
+    <NavigationProperty Name="tbl_ParamMaster1" Relationship="PCM_LearningBuddyModel.FK__tbl_Param__Param__607251E5" FromRole="tbl_ParamDetail" ToRole="tbl_ParamMaster" />
+  </EntityType>
+  <EntityType Name="tbl_ParamMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="ParamName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_ParamDetail" Relationship="PCM_LearningBuddyModel.FK__tbl_Param__Param__1B9317B3" FromRole="tbl_ParamMaster" ToRole="tbl_ParamDetail" />
+    <NavigationProperty Name="tbl_ParamDetail1" Relationship="PCM_LearningBuddyModel.FK__tbl_Param__Param__607251E5" FromRole="tbl_ParamMaster" ToRole="tbl_ParamDetail" />
+  </EntityType>
+  <EntityType Name="tbl_Permission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_Map_Role_Permission" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__Permi__11158940" FromRole="tbl_Permission" ToRole="tbl_Map_Role_Permission" />
+    <NavigationProperty Name="tbl_Map_Role_Permission1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__Permi__51300E55" FromRole="tbl_Permission" ToRole="tbl_Map_Role_Permission" />
+  </EntityType>
+  <EntityType Name="tbl_Question_Pattern">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Pattern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TopicId" Type="Guid" Nullable="false" />
+    <Property Name="Sub_TopicId" Type="Guid" Nullable="false" />
+    <Property Name="Category_SubTopicId" Type="Guid" Nullable="false" />
+    <Property Name="LevelId" Type="Guid" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="BoardId" Type="Guid" />
+    <Property Name="SubjectId" Type="Guid" Nullable="false" />
+    <Property Name="StandardId" Type="Guid" />
+    <NavigationProperty Name="tbl_Category_SubTopic" Relationship="PCM_LearningBuddyModel.FK__tbl_Quest__Categ__671F4F74" FromRole="tbl_Question_Pattern" ToRole="tbl_Category_SubTopic" />
+    <NavigationProperty Name="tbl_Level" Relationship="PCM_LearningBuddyModel.FK__tbl_Quest__Level__681373AD" FromRole="tbl_Question_Pattern" ToRole="tbl_Level" />
+    <NavigationProperty Name="tbl_SubTopic" Relationship="PCM_LearningBuddyModel.FK__tbl_Quest__Sub_T__662B2B3B" FromRole="tbl_Question_Pattern" ToRole="tbl_SubTopic" />
+    <NavigationProperty Name="tbl_Subject" Relationship="PCM_LearningBuddyModel.FK__tbl_Quest__Subje__3F9B6DFF" FromRole="tbl_Question_Pattern" ToRole="tbl_Subject" />
+    <NavigationProperty Name="tbl_Topic" Relationship="PCM_LearningBuddyModel.FK__tbl_Quest__Topic__65370702" FromRole="tbl_Question_Pattern" ToRole="tbl_Topic" />
+    <NavigationProperty Name="tbl_Solutions" Relationship="PCM_LearningBuddyModel.FK__tbl_Solut__Patte__27F8EE98" FromRole="tbl_Question_Pattern" ToRole="tbl_Solutions" />
+    <NavigationProperty Name="tbl_Solutions1" Relationship="PCM_LearningBuddyModel.FK__tbl_Solut__Patte__719CDDE7" FromRole="tbl_Question_Pattern" ToRole="tbl_Solutions" />
+  </EntityType>
+  <EntityType Name="tbl_Quiz">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="StandardId" Type="Guid" Nullable="false" />
+    <Property Name="SubjectId" Type="Guid" Nullable="false" />
+    <Property Name="TopicId" Type="Guid" Nullable="false" />
+    <Property Name="SubTopicId" Type="Guid" />
+    <Property Name="CategoryId" Type="Guid" />
+    <Property Name="TotalQuestions" Type="Int64" />
+    <Property Name="Duration" Type="Int64" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Category_SubTopic" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Catego__1C873BEC" FromRole="tbl_Quiz" ToRole="tbl_Category_SubTopic" />
+    <NavigationProperty Name="tbl_Category_SubTopic1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Catego__662B2B3B" FromRole="tbl_Quiz" ToRole="tbl_Category_SubTopic" />
+    <NavigationProperty Name="tbl_MapTeacherStudentQuiz" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__QuizI__17C286CF" FromRole="tbl_Quiz" ToRole="tbl_MapTeacherStudentQuiz" />
+    <NavigationProperty Name="tbl_MapTeacherStudentQuiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__QuizI__5CA1C101" FromRole="tbl_Quiz" ToRole="tbl_MapTeacherStudentQuiz" />
+    <NavigationProperty Name="tbl_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Standa__1D7B6025" FromRole="tbl_Quiz" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_Standard1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Standa__671F4F74" FromRole="tbl_Quiz" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_Subject" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Subjec__1E6F845E" FromRole="tbl_Quiz" ToRole="tbl_Subject" />
+    <NavigationProperty Name="tbl_Subject1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Subjec__681373AD" FromRole="tbl_Quiz" ToRole="tbl_Subject" />
+    <NavigationProperty Name="tbl_SubTopic" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__SubTop__1F63A897" FromRole="tbl_Quiz" ToRole="tbl_SubTopic" />
+    <NavigationProperty Name="tbl_SubTopic1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__SubTop__690797E6" FromRole="tbl_Quiz" ToRole="tbl_SubTopic" />
+    <NavigationProperty Name="tbl_Topic" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__TopicI__2057CCD0" FromRole="tbl_Quiz" ToRole="tbl_Topic" />
+    <NavigationProperty Name="tbl_Topic1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__TopicI__69FBBC1F" FromRole="tbl_Quiz" ToRole="tbl_Topic" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__UserId__214BF109" FromRole="tbl_Quiz" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_User1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__UserId__6AEFE058" FromRole="tbl_Quiz" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_QuizDetails" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizD__QuizI__22401542" FromRole="tbl_Quiz" ToRole="tbl_QuizDetails" />
+    <NavigationProperty Name="tbl_QuizDetails1" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizD__QuizI__6BE40491" FromRole="tbl_Quiz" ToRole="tbl_QuizDetails" />
+    <NavigationProperty Name="tbl_QuizResponse" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizI__24285DB4" FromRole="tbl_Quiz" ToRole="tbl_QuizResponse" />
+    <NavigationProperty Name="tbl_QuizResponse1" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizI__6DCC4D03" FromRole="tbl_Quiz" ToRole="tbl_QuizResponse" />
+  </EntityType>
+  <EntityType Name="tbl_QuizDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="QuizId" Type="Guid" Nullable="false" />
+    <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CorrectAnswer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="op1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="op2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="op3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="op4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Quiz" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizD__QuizI__22401542" FromRole="tbl_QuizDetails" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Quiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizD__QuizI__6BE40491" FromRole="tbl_QuizDetails" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_QuizResponse" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizD__2334397B" FromRole="tbl_QuizDetails" ToRole="tbl_QuizResponse" />
+    <NavigationProperty Name="tbl_QuizResponse1" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizD__6CD828CA" FromRole="tbl_QuizDetails" ToRole="tbl_QuizResponse" />
+  </EntityType>
+  <EntityType Name="tbl_QuizResponse">
+    <Key>
+      <PropertyRef Name="QuizId" />
+      <PropertyRef Name="QuizDetailsId" />
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="QuizId" Type="Guid" Nullable="false" />
+    <Property Name="QuizDetailsId" Type="Guid" Nullable="false" />
+    <Property Name="StudentId" Type="Guid" Nullable="false" />
+    <Property Name="SelectedAns" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AnsStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Quiz" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizI__24285DB4" FromRole="tbl_QuizResponse" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Quiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizI__6DCC4D03" FromRole="tbl_QuizResponse" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_QuizDetails" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizD__2334397B" FromRole="tbl_QuizResponse" ToRole="tbl_QuizDetails" />
+    <NavigationProperty Name="tbl_QuizDetails1" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__QuizD__6CD828CA" FromRole="tbl_QuizResponse" ToRole="tbl_QuizDetails" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__Stude__251C81ED" FromRole="tbl_QuizResponse" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_User1" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__Stude__6EC0713C" FromRole="tbl_QuizResponse" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_Map_Role_Permission" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__1209AD79" FromRole="tbl_Role" ToRole="tbl_Map_Role_Permission" />
+    <NavigationProperty Name="tbl_Map_Role_Permission1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__5224328E" FromRole="tbl_Role" ToRole="tbl_Map_Role_Permission" />
+    <NavigationProperty Name="tbl_Map_Role_User" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__12FDD1B2" FromRole="tbl_Role" ToRole="tbl_Map_Role_User" />
+    <NavigationProperty Name="tbl_Map_Role_User1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__RoleI__531856C7" FromRole="tbl_Role" ToRole="tbl_Map_Role_User" />
+  </EntityType>
+  <EntityType Name="tbl_School">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ContPerson" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContNumber" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CountryId" Type="Guid" Nullable="false" />
+    <Property Name="StateId" Type="Guid" Nullable="false" />
+    <Property Name="PinCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_Country" Relationship="PCM_LearningBuddyModel.FK__tbl_Schoo__Count__2610A626" FromRole="tbl_School" ToRole="tbl_Country" />
+    <NavigationProperty Name="tbl_Country1" Relationship="PCM_LearningBuddyModel.FK__tbl_Schoo__Count__6FB49575" FromRole="tbl_School" ToRole="tbl_Country" />
+    <NavigationProperty Name="tbl_Map_School_Board" Relationship="PCM_LearningBuddyModel.FK_tbl_Map_School_Board_tbl_School" FromRole="tbl_School" ToRole="tbl_Map_School_Board" />
+    <NavigationProperty Name="tbl_Map_School_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_S__Schoo__04459E07" FromRole="tbl_School" ToRole="tbl_Map_School_Standard" />
+    <NavigationProperty Name="tbl_Map_School_Teacher" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_S__Schoo__08162EEB" FromRole="tbl_School" ToRole="tbl_Map_School_Teacher" />
+    <NavigationProperty Name="tbl_MapSchoolTeacherStandard" Relationship="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_School" FromRole="tbl_School" ToRole="tbl_MapSchoolTeacherStandard" />
+    <NavigationProperty Name="tbl_State" Relationship="PCM_LearningBuddyModel.FK__tbl_Schoo__State__2704CA5F" FromRole="tbl_School" ToRole="tbl_State" />
+    <NavigationProperty Name="tbl_State1" Relationship="PCM_LearningBuddyModel.FK__tbl_Schoo__State__70A8B9AE" FromRole="tbl_School" ToRole="tbl_State" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_User__School__29E1370A" FromRole="tbl_School" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_User1" Relationship="PCM_LearningBuddyModel.FK__tbl_User__School__793DFFAF" FromRole="tbl_School" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_Solutions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="PatternId" Type="Guid" Nullable="false" />
+    <Property Name="Solution" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsImplemented" Type="Boolean" />
+    <Property Name="ImplementedBy" Type="Guid" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="ApprovedBy" Type="Guid" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_Question_Pattern" Relationship="PCM_LearningBuddyModel.FK__tbl_Solut__Patte__27F8EE98" FromRole="tbl_Solutions" ToRole="tbl_Question_Pattern" />
+    <NavigationProperty Name="tbl_Question_Pattern1" Relationship="PCM_LearningBuddyModel.FK__tbl_Solut__Patte__719CDDE7" FromRole="tbl_Solutions" ToRole="tbl_Question_Pattern" />
+  </EntityType>
+  <EntityType Name="tbl_Staging">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="RegistNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Standard" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Section" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Physics" Type="Boolean" />
+    <Property Name="Chemistry" Type="Boolean" />
+    <Property Name="Math" Type="Boolean" />
+    <Property Name="SchoolId" Type="Guid" />
+    <Property Name="UserType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmailId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SubsciptionStartDate" Type="DateTime" Precision="3" />
+    <Property Name="SubscriptionEndDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_Standard">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="TypeName" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="BoardId" Type="Guid" />
+    <NavigationProperty Name="tbl_Board" Relationship="PCM_LearningBuddyModel.FK__tbl_Stand__Board__28ED12D1" FromRole="tbl_Standard" ToRole="tbl_Board" />
+    <NavigationProperty Name="tbl_Board1" Relationship="PCM_LearningBuddyModel.FK__tbl_Stand__Board__72910220" FromRole="tbl_Standard" ToRole="tbl_Board" />
+    <NavigationProperty Name="tbl_Curriculum" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Stand__0E391C95" FromRole="tbl_Standard" ToRole="tbl_Curriculum" />
+    <NavigationProperty Name="tbl_Curriculum1" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Stand__498EEC8D" FromRole="tbl_Standard" ToRole="tbl_Curriculum" />
+    <NavigationProperty Name="tbl_Map_School_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_S__Stand__0539C240" FromRole="tbl_Standard" ToRole="tbl_Map_School_Standard" />
+    <NavigationProperty Name="tbl_Map_Teacher_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_T__Stand__0DCF0841" FromRole="tbl_Standard" ToRole="tbl_Map_Teacher_Standard" />
+    <NavigationProperty Name="tbl_Map_User_Section" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Stand__14E61A24" FromRole="tbl_Standard" ToRole="tbl_Map_User_Section" />
+    <NavigationProperty Name="tbl_Map_User_Section1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Stand__55F4C372" FromRole="tbl_Standard" ToRole="tbl_Map_User_Section" />
+    <NavigationProperty Name="tbl_MapSchoolTeacherStandard" Relationship="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Standard" FromRole="tbl_Standard" ToRole="tbl_MapSchoolTeacherStandard" />
+    <NavigationProperty Name="tbl_Quiz" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Standa__1D7B6025" FromRole="tbl_Standard" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Quiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Standa__671F4F74" FromRole="tbl_Standard" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_User__Standa__308E3499" FromRole="tbl_Standard" ToRole="tbl_User" />
+    <NavigationProperty Name="tbl_Standard_Level_Board_Mapping" Relationship="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Standard" FromRole="tbl_Standard" ToRole="tbl_Standard_Level_Board_Mapping" />
+  </EntityType>
+  <EntityType Name="tbl_Standard_Level_Board_Mapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="LevelId" Type="Guid" />
+    <Property Name="StandardId" Type="Guid" />
+    <Property Name="BoardId" Type="Guid" />
+    <Property Name="TopicId" Type="Guid" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_Level" Relationship="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Level" FromRole="tbl_Standard_Level_Board_Mapping" ToRole="tbl_Level" />
+    <NavigationProperty Name="tbl_Standard" Relationship="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Standard" FromRole="tbl_Standard_Level_Board_Mapping" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_Topic" Relationship="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Topic" FromRole="tbl_Standard_Level_Board_Mapping" ToRole="tbl_Topic" />
+  </EntityType>
+  <EntityType Name="tbl_State">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CountryId" Type="Guid" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_City" Relationship="PCM_LearningBuddyModel.FK_tbl_City_tbl_State" FromRole="tbl_State" ToRole="tbl_City" />
+    <NavigationProperty Name="tbl_Country" Relationship="PCM_LearningBuddyModel.FK_tbl_State_tbl_Country" FromRole="tbl_State" ToRole="tbl_Country" />
+    <NavigationProperty Name="tbl_School" Relationship="PCM_LearningBuddyModel.FK__tbl_Schoo__State__2704CA5F" FromRole="tbl_State" ToRole="tbl_School" />
+    <NavigationProperty Name="tbl_School1" Relationship="PCM_LearningBuddyModel.FK__tbl_Schoo__State__70A8B9AE" FromRole="tbl_State" ToRole="tbl_School" />
+    <NavigationProperty Name="tbl_UserDetails" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__State__4277DAAA" FromRole="tbl_State" ToRole="tbl_UserDetails" />
+    <NavigationProperty Name="tbl_UserDetails1" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__State__436BFEE3" FromRole="tbl_State" ToRole="tbl_UserDetails" />
+  </EntityType>
+  <EntityType Name="tbl_Subject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_Curriculum" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Subje__0F2D40CE" FromRole="tbl_Subject" ToRole="tbl_Curriculum" />
+    <NavigationProperty Name="tbl_Curriculum1" Relationship="PCM_LearningBuddyModel.FK__tbl_Curri__Subje__4A8310C6" FromRole="tbl_Subject" ToRole="tbl_Curriculum" />
+    <NavigationProperty Name="tbl_Map_User_Section" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Subje__15DA3E5D" FromRole="tbl_Subject" ToRole="tbl_Map_User_Section" />
+    <NavigationProperty Name="tbl_Map_User_Section1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__Subje__56E8E7AB" FromRole="tbl_Subject" ToRole="tbl_Map_User_Section" />
+    <NavigationProperty Name="tbl_MapSchoolTeacherStandard" Relationship="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Subject" FromRole="tbl_Subject" ToRole="tbl_MapSchoolTeacherStandard" />
+    <NavigationProperty Name="tbl_Question_Pattern" Relationship="PCM_LearningBuddyModel.FK__tbl_Quest__Subje__3F9B6DFF" FromRole="tbl_Subject" ToRole="tbl_Question_Pattern" />
+    <NavigationProperty Name="tbl_Quiz" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Subjec__1E6F845E" FromRole="tbl_Subject" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Quiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__Subjec__681373AD" FromRole="tbl_Subject" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Topic" Relationship="PCM_LearningBuddyModel.FK_tbl_Topic_tbl_Subject" FromRole="tbl_Subject" ToRole="tbl_Topic" />
+    <NavigationProperty Name="tbl_UserDetails" Relationship="PCM_LearningBuddyModel.FK_UserSubject" FromRole="tbl_Subject" ToRole="tbl_UserDetails" />
+  </EntityType>
+  <EntityType Name="tbl_SubTopic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="TopicId" Type="Guid" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="UPdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="tbl_Category_SubTopic" Relationship="PCM_LearningBuddyModel.FK__tbl_Categ__SubTo__0A688BB1" FromRole="tbl_SubTopic" ToRole="tbl_Category_SubTopic" />
+    <NavigationProperty Name="tbl_Category_SubTopic1" Relationship="PCM_LearningBuddyModel.FK__tbl_Categ__SubTo__42E1EEFE" FromRole="tbl_SubTopic" ToRole="tbl_Category_SubTopic" />
+    <NavigationProperty Name="tbl_CurriculumDetails" Relationship="PCM_LearningBuddyModel.FK_SubTopicId" FromRole="tbl_SubTopic" ToRole="tbl_CurriculumDetails" />
+    <NavigationProperty Name="tbl_Question_Pattern" Relationship="PCM_LearningBuddyModel.FK__tbl_Quest__Sub_T__662B2B3B" FromRole="tbl_SubTopic" ToRole="tbl_Question_Pattern" />
+    <NavigationProperty Name="tbl_Quiz" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__SubTop__1F63A897" FromRole="tbl_SubTopic" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Quiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__SubTop__690797E6" FromRole="tbl_SubTopic" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Topic" Relationship="PCM_LearningBuddyModel.FK_tbl_SubTopic_tbl_Topic" FromRole="tbl_SubTopic" ToRole="tbl_Topic" />
+  </EntityType>
+  <EntityType Name="tbl_Topic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SubjectId" Type="Guid" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <NavigationProperty Name="tbl_Category_SubTopic" Relationship="PCM_LearningBuddyModel.FK__tbl_Categ__Topic__0B5CAFEA" FromRole="tbl_Topic" ToRole="tbl_Category_SubTopic" />
+    <NavigationProperty Name="tbl_Category_SubTopic1" Relationship="PCM_LearningBuddyModel.FK__tbl_Categ__Topic__43D61337" FromRole="tbl_Topic" ToRole="tbl_Category_SubTopic" />
+    <NavigationProperty Name="tbl_ConceptMapping" Relationship="PCM_LearningBuddyModel.FK__tbl_Conce__Topic__247D636F" FromRole="tbl_Topic" ToRole="tbl_ConceptMapping" />
+    <NavigationProperty Name="tbl_CurriculumDetails" Relationship="PCM_LearningBuddyModel.FK_TopicId" FromRole="tbl_Topic" ToRole="tbl_CurriculumDetails" />
+    <NavigationProperty Name="tbl_Question_Pattern" Relationship="PCM_LearningBuddyModel.FK__tbl_Quest__Topic__65370702" FromRole="tbl_Topic" ToRole="tbl_Question_Pattern" />
+    <NavigationProperty Name="tbl_Quiz" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__TopicI__2057CCD0" FromRole="tbl_Topic" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Quiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__TopicI__69FBBC1F" FromRole="tbl_Topic" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Standard_Level_Board_Mapping" Relationship="PCM_LearningBuddyModel.FK_tbl_Standard_Level_Board_Mapping_tbl_Topic" FromRole="tbl_Topic" ToRole="tbl_Standard_Level_Board_Mapping" />
+    <NavigationProperty Name="tbl_Subject" Relationship="PCM_LearningBuddyModel.FK_tbl_Topic_tbl_Subject" FromRole="tbl_Topic" ToRole="tbl_Subject" />
+    <NavigationProperty Name="tbl_SubTopic" Relationship="PCM_LearningBuddyModel.FK_tbl_SubTopic_tbl_Topic" FromRole="tbl_Topic" ToRole="tbl_SubTopic" />
+  </EntityType>
+  <EntityType Name="tbl_UnitDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Unit1" Type="Guid" />
+    <Property Name="Unit2" Type="Guid" />
+    <Property Name="Formula" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ConversionFactor" Type="Decimal" Precision="18" Scale="8" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="isActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_UnitMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Unit_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Symbol" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="System" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Class" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_UrlExpire">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="Hascode" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Expire" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tbl_User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Address1" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Address2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="LoginId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pwd" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StandardId" Type="Guid" />
+    <Property Name="Qualification" Type="Guid" />
+    <Property Name="CountryId" Type="Guid" />
+    <Property Name="StateId" Type="Guid" />
+    <Property Name="CityId" Type="Guid" />
+    <Property Name="LocationId" Type="Guid" />
+    <Property Name="FatherName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MotherName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="AlternatePhone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="AlternateEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmailVerified" Type="Boolean" />
+    <Property Name="Occupation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PinCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Subjects" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="BoardId" Type="Guid" />
+    <Property Name="ImageB64" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SchoolId" Type="Guid" />
+    <Property Name="ChildAllowed" Type="Int32" />
+    <NavigationProperty Name="tbl_Map_Role_User" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_R__UserI__1B9317B3" FromRole="tbl_User" ToRole="tbl_Map_Role_User" />
+    <NavigationProperty Name="tbl_Map_School_Teacher" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_S__Teach__090A5324" FromRole="tbl_User" ToRole="tbl_Map_School_Teacher" />
+    <NavigationProperty Name="tbl_Map_Teacher_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_T__Teach__0CDAE408" FromRole="tbl_User" ToRole="tbl_Map_Teacher_Standard" />
+    <NavigationProperty Name="tbl_Map_User_Section" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__UserI__16CE6296" FromRole="tbl_User" ToRole="tbl_Map_User_Section" />
+    <NavigationProperty Name="tbl_Map_User_Section1" Relationship="PCM_LearningBuddyModel.FK__tbl_Map_U__UserI__57DD0BE4" FromRole="tbl_User" ToRole="tbl_Map_User_Section" />
+    <NavigationProperty Name="tbl_MapParentChild" Relationship="PCM_LearningBuddyModel.FK__tbl_MapPa__Child__2D12A970" FromRole="tbl_User" ToRole="tbl_MapParentChild" />
+    <NavigationProperty Name="tbl_MapParentChild1" Relationship="PCM_LearningBuddyModel.FK__tbl_MapPa__Paren__2C1E8537" FromRole="tbl_User" ToRole="tbl_MapParentChild" />
+    <NavigationProperty Name="tbl_MapSchoolTeacherStandard" Relationship="PCM_LearningBuddyModel.FK_tbl_MapSchoolTeacherStandard_tbl_Teacher" FromRole="tbl_User" ToRole="tbl_MapSchoolTeacherStandard" />
+    <NavigationProperty Name="tbl_MapTeacherChild" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Child__31D75E8D" FromRole="tbl_User" ToRole="tbl_MapTeacherChild" />
+    <NavigationProperty Name="tbl_MapTeacherChild1" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__30E33A54" FromRole="tbl_User" ToRole="tbl_MapTeacherChild" />
+    <NavigationProperty Name="tbl_MapTeacherStudentQuiz" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Stude__18B6AB08" FromRole="tbl_User" ToRole="tbl_MapTeacherStudentQuiz" />
+    <NavigationProperty Name="tbl_MapTeacherStudentQuiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Stude__5D95E53A" FromRole="tbl_User" ToRole="tbl_MapTeacherStudentQuiz" />
+    <NavigationProperty Name="tbl_MapTeacherStudentQuiz2" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__19AACF41" FromRole="tbl_User" ToRole="tbl_MapTeacherStudentQuiz" />
+    <NavigationProperty Name="tbl_MapTeacherStudentQuiz3" Relationship="PCM_LearningBuddyModel.FK__tbl_MapTe__Teach__5E8A0973" FromRole="tbl_User" ToRole="tbl_MapTeacherStudentQuiz" />
+    <NavigationProperty Name="tbl_Quiz" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__UserId__214BF109" FromRole="tbl_User" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_Quiz1" Relationship="PCM_LearningBuddyModel.FK__tbl_Quiz__UserId__6AEFE058" FromRole="tbl_User" ToRole="tbl_Quiz" />
+    <NavigationProperty Name="tbl_QuizResponse" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__Stude__251C81ED" FromRole="tbl_User" ToRole="tbl_QuizResponse" />
+    <NavigationProperty Name="tbl_QuizResponse1" Relationship="PCM_LearningBuddyModel.FK__tbl_QuizR__Stude__6EC0713C" FromRole="tbl_User" ToRole="tbl_QuizResponse" />
+    <NavigationProperty Name="tbl_School" Relationship="PCM_LearningBuddyModel.FK__tbl_User__School__29E1370A" FromRole="tbl_User" ToRole="tbl_School" />
+    <NavigationProperty Name="tbl_School1" Relationship="PCM_LearningBuddyModel.FK__tbl_User__School__793DFFAF" FromRole="tbl_User" ToRole="tbl_School" />
+    <NavigationProperty Name="tbl_Standard" Relationship="PCM_LearningBuddyModel.FK__tbl_User__Standa__308E3499" FromRole="tbl_User" ToRole="tbl_Standard" />
+    <NavigationProperty Name="tbl_UserDetails" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__UserI__2AD55B43" FromRole="tbl_User" ToRole="tbl_UserDetails" />
+  </EntityType>
+  <EntityType Name="tbl_UserDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="CountryId" Type="Guid" />
+    <Property Name="StateId" Type="Guid" />
+    <Property Name="CityId" Type="Guid" />
+    <Property Name="LocationId" Type="Guid" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="SubjectId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="tbl_City" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__CityI__3CBF0154" FromRole="tbl_UserDetails" ToRole="tbl_City" />
+    <NavigationProperty Name="tbl_City1" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__CityI__3DB3258D" FromRole="tbl_UserDetails" ToRole="tbl_City" />
+    <NavigationProperty Name="tbl_Country" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__Count__3EA749C6" FromRole="tbl_UserDetails" ToRole="tbl_Country" />
+    <NavigationProperty Name="tbl_Country1" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__Count__3F9B6DFF" FromRole="tbl_UserDetails" ToRole="tbl_Country" />
+    <NavigationProperty Name="tbl_Location" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__Locat__408F9238" FromRole="tbl_UserDetails" ToRole="tbl_Location" />
+    <NavigationProperty Name="tbl_Location1" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__Locat__4183B671" FromRole="tbl_UserDetails" ToRole="tbl_Location" />
+    <NavigationProperty Name="tbl_State" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__State__4277DAAA" FromRole="tbl_UserDetails" ToRole="tbl_State" />
+    <NavigationProperty Name="tbl_State1" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__State__436BFEE3" FromRole="tbl_UserDetails" ToRole="tbl_State" />
+    <NavigationProperty Name="tbl_Subject" Relationship="PCM_LearningBuddyModel.FK_UserSubject" FromRole="tbl_UserDetails" ToRole="tbl_Subject" />
+    <NavigationProperty Name="tbl_User" Relationship="PCM_LearningBuddyModel.FK__tbl_UserD__UserI__2AD55B43" FromRole="tbl_UserDetails" ToRole="tbl_User" />
+  </EntityType>
+  <EntityType Name="tbl_UserLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="PageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdataedBy" Type="Guid" />
+  </EntityType>
+  <EntityType Name="tbl_UserType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="TypeName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="Guid" Nullable="false" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="Guid" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__tbl_Board__Count__09746778">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Board" Role="tbl_Board" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Board">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Board__Count__41EDCAC5">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Board" Role="tbl_Board" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Board">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Curri__Board__0C50D423">
+    <End Type="PCM_LearningBuddyModel.tbl_Board" Role="tbl_Board" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Curriculum" Role="tbl_Curriculum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Board">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Curriculum">
+        <PropertyRef Name="BoardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Curri__Board__47A6A41B">
+    <End Type="PCM_LearningBuddyModel.tbl_Board" Role="tbl_Board" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Curriculum" Role="tbl_Curriculum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Board">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Curriculum">
+        <PropertyRef Name="BoardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Stand__Board__28ED12D1">
+    <End Type="PCM_LearningBuddyModel.tbl_Board" Role="tbl_Board" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Board">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Standard">
+        <PropertyRef Name="BoardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Stand__Board__72910220">
+    <End Type="PCM_LearningBuddyModel.tbl_Board" Role="tbl_Board" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Board">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Standard">
+        <PropertyRef Name="BoardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Map_School_Board_tbl_Board">
+    <End Type="PCM_LearningBuddyModel.tbl_Board" Role="tbl_Board" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_School_Board" Role="tbl_Map_School_Board" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Board">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_School_Board">
+        <PropertyRef Name="BoardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Categ__SubTo__0A688BB1">
+    <End Type="PCM_LearningBuddyModel.tbl_SubTopic" Role="tbl_SubTopic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Category_SubTopic" Role="tbl_Category_SubTopic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Category_SubTopic">
+        <PropertyRef Name="SubTopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Categ__SubTo__42E1EEFE">
+    <End Type="PCM_LearningBuddyModel.tbl_SubTopic" Role="tbl_SubTopic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Category_SubTopic" Role="tbl_Category_SubTopic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Category_SubTopic">
+        <PropertyRef Name="SubTopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Categ__Topic__0B5CAFEA">
+    <End Type="PCM_LearningBuddyModel.tbl_Topic" Role="tbl_Topic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Category_SubTopic" Role="tbl_Category_SubTopic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Category_SubTopic">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Categ__Topic__43D61337">
+    <End Type="PCM_LearningBuddyModel.tbl_Topic" Role="tbl_Topic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Category_SubTopic" Role="tbl_Category_SubTopic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Category_SubTopic">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Conce__Categ__23893F36">
+    <End Type="PCM_LearningBuddyModel.tbl_Category_SubTopic" Role="tbl_Category_SubTopic" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_ConceptMapping" Role="tbl_ConceptMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Category_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_ConceptMapping">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Categ__671F4F74">
+    <End Type="PCM_LearningBuddyModel.tbl_Category_SubTopic" Role="tbl_Category_SubTopic" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Question_Pattern" Role="tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Category_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="Category_SubTopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__Catego__1C873BEC">
+    <End Type="PCM_LearningBuddyModel.tbl_Category_SubTopic" Role="tbl_Category_SubTopic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Category_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__Catego__662B2B3B">
+    <End Type="PCM_LearningBuddyModel.tbl_Category_SubTopic" Role="tbl_Category_SubTopic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Category_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryId">
+    <End Type="PCM_LearningBuddyModel.tbl_Category_SubTopic" Role="tbl_Category_SubTopic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_CurriculumDetails" Role="tbl_CurriculumDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Category_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_CurriculumDetails">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__CityI__3CBF0154">
+    <End Type="PCM_LearningBuddyModel.tbl_City" Role="tbl_City" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_UserDetails" Role="tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__CityI__3DB3258D">
+    <End Type="PCM_LearningBuddyModel.tbl_City" Role="tbl_City" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_UserDetails" Role="tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_City_tbl_State">
+    <End Type="PCM_LearningBuddyModel.tbl_State" Role="tbl_State" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_City" Role="tbl_City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_City">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Location_tbl_City">
+    <End Type="PCM_LearningBuddyModel.tbl_City" Role="tbl_City" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Location" Role="tbl_Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Location">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Conce__Topic__247D636F">
+    <End Type="PCM_LearningBuddyModel.tbl_Topic" Role="tbl_Topic" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_ConceptMapping" Role="tbl_ConceptMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_ConceptMapping">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Curri__Count__0D44F85C">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Curriculum" Role="tbl_Curriculum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Curriculum">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Curri__Count__489AC854">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Curriculum" Role="tbl_Curriculum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Curriculum">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Nouns__Count__1A9EF37A">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Nouns" Role="tbl_Nouns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Nouns">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Nouns__Count__5F7E2DAC">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Nouns" Role="tbl_Nouns" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Nouns">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Schoo__Count__2610A626">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_School" Role="tbl_School" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_School">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Schoo__Count__6FB49575">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_School" Role="tbl_School" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_School">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__Count__3EA749C6">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_UserDetails" Role="tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__Count__3F9B6DFF">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_UserDetails" Role="tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_State_tbl_Country">
+    <End Type="PCM_LearningBuddyModel.tbl_Country" Role="tbl_Country" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_State" Role="tbl_State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Country">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_State">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Curri__Curri__10216507">
+    <End Type="PCM_LearningBuddyModel.tbl_Curriculum" Role="tbl_Curriculum" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_CurriculumDetails" Role="tbl_CurriculumDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Curriculum">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_CurriculumDetails">
+        <PropertyRef Name="CurriculumId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Curri__Curri__4B7734FF">
+    <End Type="PCM_LearningBuddyModel.tbl_Curriculum" Role="tbl_Curriculum" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_CurriculumDetails" Role="tbl_CurriculumDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Curriculum">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_CurriculumDetails">
+        <PropertyRef Name="CurriculumId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Curri__Stand__0E391C95">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Curriculum" Role="tbl_Curriculum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Curriculum">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Curri__Stand__498EEC8D">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Curriculum" Role="tbl_Curriculum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Curriculum">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Curri__Subje__0F2D40CE">
+    <End Type="PCM_LearningBuddyModel.tbl_Subject" Role="tbl_Subject" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Curriculum" Role="tbl_Curriculum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Curriculum">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Curri__Subje__4A8310C6">
+    <End Type="PCM_LearningBuddyModel.tbl_Subject" Role="tbl_Subject" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Curriculum" Role="tbl_Curriculum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Curriculum">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LevelId">
+    <End Type="PCM_LearningBuddyModel.tbl_Level" Role="tbl_Level" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_CurriculumDetails" Role="tbl_CurriculumDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Level">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_CurriculumDetails">
+        <PropertyRef Name="LevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubTopicId">
+    <End Type="PCM_LearningBuddyModel.tbl_SubTopic" Role="tbl_SubTopic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_CurriculumDetails" Role="tbl_CurriculumDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_CurriculumDetails">
+        <PropertyRef Name="SubTopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TopicId">
+    <End Type="PCM_LearningBuddyModel.tbl_Topic" Role="tbl_Topic" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_CurriculumDetails" Role="tbl_CurriculumDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_CurriculumDetails">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Level__681373AD">
+    <End Type="PCM_LearningBuddyModel.tbl_Level" Role="tbl_Level" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Question_Pattern" Role="tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Level">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="LevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Level">
+    <End Type="PCM_LearningBuddyModel.tbl_Level" Role="tbl_Level" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Standard_Level_Board_Mapping" Role="tbl_Standard_Level_Board_Mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Level">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Standard_Level_Board_Mapping">
+        <PropertyRef Name="LevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__Locat__408F9238">
+    <End Type="PCM_LearningBuddyModel.tbl_Location" Role="tbl_Location" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_UserDetails" Role="tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__Locat__4183B671">
+    <End Type="PCM_LearningBuddyModel.tbl_Location" Role="tbl_Location" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_UserDetails" Role="tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_R__Permi__11158940">
+    <End Type="PCM_LearningBuddyModel.tbl_Permission" Role="tbl_Permission" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_Role_Permission" Role="tbl_Map_Role_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_Permission">
+        <PropertyRef Name="PermissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_R__Permi__51300E55">
+    <End Type="PCM_LearningBuddyModel.tbl_Permission" Role="tbl_Permission" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_Role_Permission" Role="tbl_Map_Role_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_Permission">
+        <PropertyRef Name="PermissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_R__RoleI__1209AD79">
+    <End Type="PCM_LearningBuddyModel.tbl_Role" Role="tbl_Role" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_Role_Permission" Role="tbl_Map_Role_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_Permission">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_R__RoleI__5224328E">
+    <End Type="PCM_LearningBuddyModel.tbl_Role" Role="tbl_Role" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_Role_Permission" Role="tbl_Map_Role_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_Permission">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_R__RoleI__12FDD1B2">
+    <End Type="PCM_LearningBuddyModel.tbl_Role" Role="tbl_Role" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_Role_User" Role="tbl_Map_Role_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_User">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_R__RoleI__531856C7">
+    <End Type="PCM_LearningBuddyModel.tbl_Role" Role="tbl_Role" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_Role_User" Role="tbl_Map_Role_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_User">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_R__UserI__1B9317B3">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_Role_User" Role="tbl_Map_Role_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Role_User">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Map_School_Board_tbl_School">
+    <End Type="PCM_LearningBuddyModel.tbl_School" Role="tbl_School" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_School_Board" Role="tbl_Map_School_Board" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_School">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_School_Board">
+        <PropertyRef Name="SchoolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_S__Schoo__04459E07">
+    <End Type="PCM_LearningBuddyModel.tbl_School" Role="tbl_School" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_School_Standard" Role="tbl_Map_School_Standard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_School">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_School_Standard">
+        <PropertyRef Name="SchoolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_S__Stand__0539C240">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_School_Standard" Role="tbl_Map_School_Standard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_School_Standard">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_S__Schoo__08162EEB">
+    <End Type="PCM_LearningBuddyModel.tbl_School" Role="tbl_School" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_School_Teacher" Role="tbl_Map_School_Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_School">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_School_Teacher">
+        <PropertyRef Name="SchoolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_S__Teach__090A5324">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_School_Teacher" Role="tbl_Map_School_Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_School_Teacher">
+        <PropertyRef Name="TeacherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_T__Stand__0DCF0841">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_Teacher_Standard" Role="tbl_Map_Teacher_Standard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Teacher_Standard">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_T__Teach__0CDAE408">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_Teacher_Standard" Role="tbl_Map_Teacher_Standard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_Teacher_Standard">
+        <PropertyRef Name="TeacherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_U__Secti__13F1F5EB">
+    <End Type="PCM_LearningBuddyModel.tbl_ParamDetail" Role="tbl_ParamDetail" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_User_Section" Role="tbl_Map_User_Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_ParamDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_User_Section">
+        <PropertyRef Name="SectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_U__Secti__55009F39">
+    <End Type="PCM_LearningBuddyModel.tbl_ParamDetail" Role="tbl_ParamDetail" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_User_Section" Role="tbl_Map_User_Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_ParamDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_User_Section">
+        <PropertyRef Name="SectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_U__Stand__14E61A24">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_User_Section" Role="tbl_Map_User_Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_User_Section">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_U__Stand__55F4C372">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_User_Section" Role="tbl_Map_User_Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_User_Section">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_U__Subje__15DA3E5D">
+    <End Type="PCM_LearningBuddyModel.tbl_Subject" Role="tbl_Subject" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_User_Section" Role="tbl_Map_User_Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_User_Section">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_U__Subje__56E8E7AB">
+    <End Type="PCM_LearningBuddyModel.tbl_Subject" Role="tbl_Subject" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_User_Section" Role="tbl_Map_User_Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_User_Section">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_U__UserI__16CE6296">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_User_Section" Role="tbl_Map_User_Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_User_Section">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Map_U__UserI__57DD0BE4">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Map_User_Section" Role="tbl_Map_User_Section" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Map_User_Section">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_MapPa__Child__2D12A970">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapParentChild" Role="tbl_MapParentChild" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapParentChild">
+        <PropertyRef Name="ChildId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_MapPa__Paren__2C1E8537">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapParentChild" Role="tbl_MapParentChild" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapParentChild">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_MapSchoolTeacherStandard_tbl_School">
+    <End Type="PCM_LearningBuddyModel.tbl_School" Role="tbl_School" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapSchoolTeacherStandard" Role="tbl_MapSchoolTeacherStandard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_School">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapSchoolTeacherStandard">
+        <PropertyRef Name="SchoolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_MapSchoolTeacherStandard_tbl_Standard">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapSchoolTeacherStandard" Role="tbl_MapSchoolTeacherStandard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapSchoolTeacherStandard">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_MapSchoolTeacherStandard_tbl_Subject">
+    <End Type="PCM_LearningBuddyModel.tbl_Subject" Role="tbl_Subject" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapSchoolTeacherStandard" Role="tbl_MapSchoolTeacherStandard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapSchoolTeacherStandard">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_MapSchoolTeacherStandard_tbl_Teacher">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapSchoolTeacherStandard" Role="tbl_MapSchoolTeacherStandard" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapSchoolTeacherStandard">
+        <PropertyRef Name="TeacherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_MapTe__Child__31D75E8D">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapTeacherChild" Role="tbl_MapTeacherChild" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapTeacherChild">
+        <PropertyRef Name="ChildId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_MapTe__Teach__30E33A54">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapTeacherChild" Role="tbl_MapTeacherChild" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapTeacherChild">
+        <PropertyRef Name="TeacherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_MapTe__QuizI__17C286CF">
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapTeacherStudentQuiz" Role="tbl_MapTeacherStudentQuiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Quiz">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapTeacherStudentQuiz">
+        <PropertyRef Name="QuizId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_MapTe__QuizI__5CA1C101">
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapTeacherStudentQuiz" Role="tbl_MapTeacherStudentQuiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Quiz">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapTeacherStudentQuiz">
+        <PropertyRef Name="QuizId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_MapTe__Stude__18B6AB08">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapTeacherStudentQuiz" Role="tbl_MapTeacherStudentQuiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapTeacherStudentQuiz">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_MapTe__Stude__5D95E53A">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapTeacherStudentQuiz" Role="tbl_MapTeacherStudentQuiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapTeacherStudentQuiz">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_MapTe__Teach__19AACF41">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapTeacherStudentQuiz" Role="tbl_MapTeacherStudentQuiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapTeacherStudentQuiz">
+        <PropertyRef Name="TeacherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_MapTe__Teach__5E8A0973">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_MapTeacherStudentQuiz" Role="tbl_MapTeacherStudentQuiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_MapTeacherStudentQuiz">
+        <PropertyRef Name="TeacherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Param__Param__1B9317B3">
+    <End Type="PCM_LearningBuddyModel.tbl_ParamMaster" Role="tbl_ParamMaster" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_ParamDetail" Role="tbl_ParamDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_ParamMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_ParamDetail">
+        <PropertyRef Name="ParamID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Param__Param__607251E5">
+    <End Type="PCM_LearningBuddyModel.tbl_ParamMaster" Role="tbl_ParamMaster" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_ParamDetail" Role="tbl_ParamDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_ParamMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_ParamDetail">
+        <PropertyRef Name="ParamID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Sub_T__662B2B3B">
+    <End Type="PCM_LearningBuddyModel.tbl_SubTopic" Role="tbl_SubTopic" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Question_Pattern" Role="tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="Sub_TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Subje__3F9B6DFF">
+    <End Type="PCM_LearningBuddyModel.tbl_Subject" Role="tbl_Subject" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Question_Pattern" Role="tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quest__Topic__65370702">
+    <End Type="PCM_LearningBuddyModel.tbl_Topic" Role="tbl_Topic" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Question_Pattern" Role="tbl_Question_Pattern" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Question_Pattern">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Solut__Patte__27F8EE98">
+    <End Type="PCM_LearningBuddyModel.tbl_Question_Pattern" Role="tbl_Question_Pattern" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Solutions" Role="tbl_Solutions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Question_Pattern">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Solutions">
+        <PropertyRef Name="PatternId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Solut__Patte__719CDDE7">
+    <End Type="PCM_LearningBuddyModel.tbl_Question_Pattern" Role="tbl_Question_Pattern" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Solutions" Role="tbl_Solutions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Question_Pattern">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Solutions">
+        <PropertyRef Name="PatternId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__Standa__1D7B6025">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__Standa__671F4F74">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__Subjec__1E6F845E">
+    <End Type="PCM_LearningBuddyModel.tbl_Subject" Role="tbl_Subject" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__Subjec__681373AD">
+    <End Type="PCM_LearningBuddyModel.tbl_Subject" Role="tbl_Subject" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__SubTop__1F63A897">
+    <End Type="PCM_LearningBuddyModel.tbl_SubTopic" Role="tbl_SubTopic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="SubTopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__SubTop__690797E6">
+    <End Type="PCM_LearningBuddyModel.tbl_SubTopic" Role="tbl_SubTopic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_SubTopic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="SubTopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__TopicI__2057CCD0">
+    <End Type="PCM_LearningBuddyModel.tbl_Topic" Role="tbl_Topic" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__TopicI__69FBBC1F">
+    <End Type="PCM_LearningBuddyModel.tbl_Topic" Role="tbl_Topic" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__UserId__214BF109">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Quiz__UserId__6AEFE058">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Quiz">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_QuizD__QuizI__22401542">
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_QuizDetails" Role="tbl_QuizDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Quiz">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_QuizDetails">
+        <PropertyRef Name="QuizId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_QuizD__QuizI__6BE40491">
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_QuizDetails" Role="tbl_QuizDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Quiz">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_QuizDetails">
+        <PropertyRef Name="QuizId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_QuizR__QuizI__24285DB4">
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_QuizResponse" Role="tbl_QuizResponse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Quiz">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_QuizResponse">
+        <PropertyRef Name="QuizId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_QuizR__QuizI__6DCC4D03">
+    <End Type="PCM_LearningBuddyModel.tbl_Quiz" Role="tbl_Quiz" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_QuizResponse" Role="tbl_QuizResponse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Quiz">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_QuizResponse">
+        <PropertyRef Name="QuizId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_QuizR__QuizD__2334397B">
+    <End Type="PCM_LearningBuddyModel.tbl_QuizDetails" Role="tbl_QuizDetails" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_QuizResponse" Role="tbl_QuizResponse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_QuizDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_QuizResponse">
+        <PropertyRef Name="QuizDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_QuizR__QuizD__6CD828CA">
+    <End Type="PCM_LearningBuddyModel.tbl_QuizDetails" Role="tbl_QuizDetails" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_QuizResponse" Role="tbl_QuizResponse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_QuizDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_QuizResponse">
+        <PropertyRef Name="QuizDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_QuizR__Stude__251C81ED">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_QuizResponse" Role="tbl_QuizResponse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_QuizResponse">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_QuizR__Stude__6EC0713C">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_QuizResponse" Role="tbl_QuizResponse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_QuizResponse">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Schoo__State__2704CA5F">
+    <End Type="PCM_LearningBuddyModel.tbl_State" Role="tbl_State" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_School" Role="tbl_School" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_School">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_Schoo__State__70A8B9AE">
+    <End Type="PCM_LearningBuddyModel.tbl_State" Role="tbl_State" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_School" Role="tbl_School" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_School">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_User__School__29E1370A">
+    <End Type="PCM_LearningBuddyModel.tbl_School" Role="tbl_School" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_School">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_User">
+        <PropertyRef Name="SchoolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_User__School__793DFFAF">
+    <End Type="PCM_LearningBuddyModel.tbl_School" Role="tbl_School" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_School">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_User">
+        <PropertyRef Name="SchoolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_User__Standa__308E3499">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_User">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Standard">
+    <End Type="PCM_LearningBuddyModel.tbl_Standard" Role="tbl_Standard" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Standard_Level_Board_Mapping" Role="tbl_Standard_Level_Board_Mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Standard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Standard_Level_Board_Mapping">
+        <PropertyRef Name="StandardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Standard_Level_Board_Mapping_tbl_Topic">
+    <End Type="PCM_LearningBuddyModel.tbl_Topic" Role="tbl_Topic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Standard_Level_Board_Mapping" Role="tbl_Standard_Level_Board_Mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Standard_Level_Board_Mapping">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__State__4277DAAA">
+    <End Type="PCM_LearningBuddyModel.tbl_State" Role="tbl_State" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_UserDetails" Role="tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__State__436BFEE3">
+    <End Type="PCM_LearningBuddyModel.tbl_State" Role="tbl_State" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_UserDetails" Role="tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_State">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Topic_tbl_Subject">
+    <End Type="PCM_LearningBuddyModel.tbl_Subject" Role="tbl_Subject" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_Topic" Role="tbl_Topic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_Topic">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubject">
+    <End Type="PCM_LearningBuddyModel.tbl_Subject" Role="tbl_Subject" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_UserDetails" Role="tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Subject">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_SubTopic_tbl_Topic">
+    <End Type="PCM_LearningBuddyModel.tbl_Topic" Role="tbl_Topic" Multiplicity="0..1" />
+    <End Type="PCM_LearningBuddyModel.tbl_SubTopic" Role="tbl_SubTopic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_SubTopic">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tbl_UserD__UserI__2AD55B43">
+    <End Type="PCM_LearningBuddyModel.tbl_User" Role="tbl_User" Multiplicity="1" />
+    <End Type="PCM_LearningBuddyModel.tbl_UserDetails" Role="tbl_UserDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tbl_UserDetails">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

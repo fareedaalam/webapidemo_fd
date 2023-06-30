@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{88EE7A70-8120-4D24-AF94-C948180A6DEA}|">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebAPIDemo/Controllers/CityController.cs">
+    <Files>
+      <File FileName="WebAPIDemo/Models/IdentityModels.cs" Line="1" Column="1" />
+      <File FileName="WebAPIDemo/Controllers/CityController.cs" Line="37" Column="63" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebAPIDemo" expanded="True">
+            <Node name="BusinessServices" expanded="True">
+              <Node name="Interface" expanded="True" />
+            </Node>
+            <Node name="WebAPIDemo" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="CityController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WebAPIDemo PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
